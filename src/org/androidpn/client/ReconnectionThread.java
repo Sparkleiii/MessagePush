@@ -38,7 +38,7 @@ public class ReconnectionThread extends Thread {
 
     public void run() {
         try {
-            while (!isInterrupted()) {
+            while (!isInterrupted() && !xmppManager.getConnection().isAuthenticated()) {
                 Log.d(LOGTAG, "Trying to reconnect in " + waiting()
                         + " seconds");
                 Thread.sleep((long) waiting() * 1000L);

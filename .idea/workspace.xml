@@ -7,9 +7,61 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31c3146f-50f7-433c-9dfb-c66c84ad8f61" name="Default" comment="" />
+    <list default="true" id="31c3146f-50f7-433c-9dfb-c66c84ad8f61" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/MD5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/litepal-1.2.0-src.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon_main.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon_password.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon_username.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/litepal_1_2_0_src.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/border_line_while.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/btn_round.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/login.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/androidpn/demoapp/LoginActivity.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/asmack.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/asmack.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/androidpn-client.apk" afterPath="$PROJECT_DIR$/bin/classes/androidpn-client.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/androidpn-client.unaligned.apk" afterPath="$PROJECT_DIR$/bin/classes/androidpn-client.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ConnectivityReceiver.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ConnectivityReceiver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$1.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$2.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$3.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$TaskSubmitter.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$TaskSubmitter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$TaskTracker.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService$TaskTracker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/NotificationService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ReconnectionThread.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ReconnectionThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$1.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$1.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$ConnectTask.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$ConnectTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$LoginTask.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$LoginTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$RegisterTask$1.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$RegisterTask$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$RegisterTask.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager$RegisterTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/XmppManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/DemoAppActivity.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/DemoAppActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$drawable.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$raw.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R.class" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/icon_main_small.jpg" afterPath="$PROJECT_DIR$/res/drawable/icon_main_small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidpn-client.iml" afterPath="$PROJECT_DIR$/androidpn-client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java" afterPath="$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/androidpn/client/ReconnectionThread.java" afterPath="$PROJECT_DIR$/src/org/androidpn/client/ReconnectionThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" afterPath="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java" afterPath="$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,56 +70,74 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="test@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="test@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="test" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="test@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="test" type="e3449647:DbNodeDescriptor" />
+        <item name="notification" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="XmppManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="321" column="56" lean-forward="false" selection-start-line="321" selection-start-column="56" selection-end-line="321" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ConnectivityReceiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#2248#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="903">
+              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmppManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
+      <file leaf-file-name="ServiceManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#16061#0" expanded="true" />
-                <element signature="e#13594#13595#0" expanded="true" />
-                <element signature="e#13653#13654#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1533">
+              <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoAppActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java">
+      <file leaf-file-name="ReconnectionThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ReconnectionThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+            <state relative-caret-position="777">
+              <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
               <folding>
-                <element signature="e#0#1689#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationDetailsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationDetailsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#7202#0" expanded="true" />
+                <element signature="e#0#1949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,57 +146,8 @@
       <file leaf-file-name="NotificationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3819">
-              <caret line="256" column="45" lean-forward="false" selection-start-line="256" selection-start-column="45" selection-end-line="256" selection-end-column="45" />
-              <folding>
-                <element signature="e#4138#4139#0" expanded="true" />
-                <element signature="e#4202#4203#0" expanded="true" />
-                <element signature="e#4289#4290#0" expanded="true" />
-                <element signature="e#4334#4335#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationIQ.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationIQ.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#2096#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationPacketListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationPacketListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#3130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Packet.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/Packet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="36" column="57" lean-forward="false" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DigestMD5SaslClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DigestMD5SaslClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="1680">
+              <caret line="109" column="32" lean-forward="false" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -134,10 +155,49 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>run</find>
+      <find>connection.startHeartBeat();</find>
+      <find>notifyconnec</find>
+      <find>writePackets</find>
+      <find>private void writePackets(Thread thisThread)</find>
+      <find>private void writePackets</find>
+      <find>dex</find>
+      <find>connectU</find>
+      <find>connectTash</find>
+      <find>Register</find>
+      <find>addp</find>
+      <find>P</find>
+      <find>addpac</find>
+      <find>count</find>
+      <find>RegisterTas</find>
+      <find>RegisterTask</find>
+      <find>already</find>
+      <find>LoginT</find>
+      <find>Logged</find>
+      <find>Random</find>
+      <find>wuhui123</find>
+      <find>JOY</find>
+      <find>start</find>
+      <find>runtas</find>
+      <find>process</find>
+      <find>connecttas</find>
+      <find>addtask</find>
+      <find>drop</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -148,15 +208,44 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/project.properties" />
-        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/XMPPConnection.class" />
         <option value="$PROJECT_DIR$/res/raw/androidpn.properties" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/client/NotificationService.java" />
         <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/IQ.class" />
         <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/Packet.class" />
         <option value="$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DigestMD5SaslClient.class" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/asmack/de/measite/smack/SaslClientFactory.java" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DigestChallenge.class" />
+        <option value="$PROJECT_DIR$/asmack/com/novell/sasl/client/DigestChallenge.java" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/ResponseAuth.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DirectiveList.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/ParsedDirective.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/TokenParser.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/asmack/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/callback/Callback.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/callback/CallbackHandler.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/callback/ChoiceCallback.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/Destroyable.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/DestroyFailedException.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/PrivateCredentialPermission.class" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/PacketListener.class" />
+        <option value="$PROJECT_DIR$/asmack/de/measite/smack/Sasl.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" />
+        <option value="$PROJECT_DIR$/asmack/org/jivesoftware/smack/PacketReader.java" />
+        <option value="$PROJECT_DIR$/asmack/org/jivesoftware/smack/XMPPConnection.java" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/PacketWriter.class" />
+        <option value="$PROJECT_DIR$/asmack/org/jivesoftware/smack/PacketWriter.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/client/PacketWriters.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/client/ReconnectionThread.java" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/proxy/DirectSocketFactory.class" />
         <option value="$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java" />
+        <option value="$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/XMPPConnection.class" />
       </list>
     </option>
   </component>
@@ -167,10 +256,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="669" />
+    <option name="y" value="41" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -187,8 +279,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,6 +292,11 @@
             <path>
               <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,31 +318,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="androidpn" type="462c0819:PsiDirectoryNode" />
-              <item name="demoapp" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="device.picker.selection" value="127.0.0.1:62001" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/asmack.jar!/" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sparkle\Desktop\androidpn-client\res\drawable" />
-      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\lib" />
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\res\drawable-xxdpi" />
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\res\drawable-hdpi" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.apache.harmony.javax.security.auth" />
+      <recent name="de.measite.smack" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client" />
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\libs" />
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\asmack\com\novell\sasl\client" />
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\res\drawable" />
+      <recent name="C:\Users\Sparkle\Desktop\androidpn-client\res\values" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -261,6 +372,31 @@
   </component>
   <component name="RunManager" selected="Android App.Sparkle">
     <configuration name="Sparkle" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="androidpn-client" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+    </configuration>
+    <configuration name="Sparkle2" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="androidpn-client" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -365,6 +501,10 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Android App.Sparkle" />
+      <item index="1" class="java.lang.String" itemvalue="Android App.Sparkle2" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -382,12 +522,17 @@
       <workItem from="1523261119299" duration="1005000" />
       <workItem from="1523266240150" duration="2203000" />
       <workItem from="1523270368880" duration="5093000" />
-      <workItem from="1523281307822" duration="680000" />
+      <workItem from="1523281307822" duration="3665000" />
+      <workItem from="1523322294370" duration="4689000" />
+      <workItem from="1523327457018" duration="26370000" />
+      <workItem from="1523371700704" duration="974000" />
+      <workItem from="1523406322056" duration="580000" />
+      <workItem from="1523416025404" duration="240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15082000" />
+    <option name="totallyTimeSpent" value="50920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -404,69 +549,37 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1978193" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66923076" sideWeight="0.38426626" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.91846156" sideWeight="0.61573374" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22314675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.48789713" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1978193" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.48789713" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51805335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102874435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5635401" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -479,448 +592,255 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/Packet.class">
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmack/META-INF/MANIFEST.MF" />
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/callback/Callback.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/callback/CallbackHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/callback/ChoiceCallback.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/TokenParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/ParsedDirective.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DirectiveList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DigestChallenge.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DigestMD5SaslClient.class">
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/AuthPermission.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
+    <entry file="file://$PROJECT_DIR$/asmack/org/apache/harmony/javax/security/auth/AuthPermission.java" />
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/Destroyable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7904">
-          <caret line="416" column="14" lean-forward="false" selection-start-line="416" selection-start-column="14" selection-end-line="416" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#16061#0" expanded="true" />
-            <element signature="e#13594#13595#0" expanded="true" />
-            <element signature="e#13653#13654#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
+    <entry file="file://$PROJECT_DIR$/asmack/org/apache/harmony/javax/security/auth/Destroyable.java" />
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/DestroyFailedException.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2248#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/PacketListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="171">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/apache/harmony/javax/security/auth/PrivateCredentialPermission.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmack/org/apache/harmony/javax/security/auth/DestroyFailedException.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/ConnectionCreationListener.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/apache/qpid/management/common/sasl/UserPasswordCallbackHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/asmack/org/jivesoftware/smack/XMPPConnection.java" />
+    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmack/com/novell/sasl/client/DigestChallenge.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/packet/Packet.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/packet/IQ.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/packet/Registration.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/Connection.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/XMPPConnection.java" />
+    <entry file="file://E:/AndroidSDK/android-sdk-windows/sources/android-19/android/content/SharedPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/BOSHPacketReader.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/de/measite/smack/AndroidDebugger.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/util/Cache.java" />
+    <entry file="file://E:/AndroidSDK/android-sdk-windows/sources/android-19/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="1023" column="29" lean-forward="false" selection-start-line="1023" selection-start-column="29" selection-end-line="1023" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/PacketWriter.java" />
+    <entry file="file://$PROJECT_DIR$/asmack/org/jivesoftware/smack/PacketReader.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/PhoneStateChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/PacketWriters.java" />
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/PacketWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/proxy/DirectSocketFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmack/de/measite/smack/Sasl.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/LogUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0670e52f-dd84-4c37-9d6e-b1b1f7cbbb6a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/XMPPConnection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5681">
-          <caret line="299" column="13" lean-forward="false" selection-start-line="299" selection-start-column="13" selection-end-line="299" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="-4">
+          <caret line="590" column="0" lean-forward="true" selection-start-line="590" selection-start-column="0" selection-end-line="590" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2432">
-          <caret line="128" column="69" lean-forward="false" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#16061#0" expanded="true" />
-            <element signature="e#13594#13595#0" expanded="true" />
-            <element signature="e#13653#13654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2432">
-          <caret line="128" column="69" lean-forward="false" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#16061#0" expanded="true" />
-            <element signature="e#13594#13595#0" expanded="true" />
-            <element signature="e#13653#13654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2432">
-          <caret line="128" column="69" lean-forward="false" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#16061#0" expanded="true" />
-            <element signature="e#13594#13595#0" expanded="true" />
-            <element signature="e#13653#13654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <caret line="321" column="56" lean-forward="false" selection-start-line="321" selection-start-column="56" selection-end-line="321" selection-end-column="56" />
           <folding>
-            <element signature="e#0#16061#0" expanded="true" />
-            <element signature="e#13594#13595#0" expanded="true" />
-            <element signature="e#13653#13654#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/notification.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="903">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="1533">
+          <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationDetailsActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ReconnectionThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="777">
+          <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
-            <element signature="e#0#7202#0" expanded="true" />
+            <element signature="e#0#1949#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/XMPPConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="72" column="57" lean-forward="false" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3819">
-          <caret line="256" column="45" lean-forward="false" selection-start-line="256" selection-start-column="45" selection-end-line="256" selection-end-column="45" />
-          <folding>
-            <element signature="e#4138#4139#0" expanded="true" />
-            <element signature="e#4202#4203#0" expanded="true" />
-            <element signature="e#4289#4290#0" expanded="true" />
-            <element signature="e#4334#4335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/IQ.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationIQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#2096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationPacketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/Packet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="36" column="57" lean-forward="false" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        <state relative-caret-position="1680">
+          <caret line="109" column="32" lean-forward="false" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/com/novell/sasl/client/DigestMD5SaslClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ConnectivityReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#16061#0" expanded="true" />
-            <element signature="e#13594#13595#0" expanded="true" />
-            <element signature="e#13653#13654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#1689#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,7 +920,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>asmack</last-edited>
+          <last-edited>litepal-1.2.0-src</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="litepal-1.2.0-src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/litepal-1.2.0-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/MD5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/litepal-1.2.0-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

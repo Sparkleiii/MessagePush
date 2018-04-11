@@ -43,7 +43,7 @@ import android.util.Log;
 
 /**
  * This class is to manage the XMPP connection between client and server.
- * 
+ *
  * @author Sehwan Noh (devnoh@gmail.com)
  */
 public class XmppManager {
@@ -103,6 +103,7 @@ public class XmppManager {
         reconnection = new ReconnectionThread(this);
     }
 
+
     public Context getContext() {
         return context;
     }
@@ -120,7 +121,6 @@ public class XmppManager {
     public void terminatePersistentConnection() {
         Log.d(LOGTAG, "terminatePersistentConnection()...");
         Runnable runnable = new Runnable() {
-
             final XmppManager xmppManager = XmppManager.this;
 
             public void run() {
@@ -276,7 +276,7 @@ public class XmppManager {
     }
 
     /**
-     * A runnable task to connect the server. 
+     * A runnable task to connect the server.
      */
     private class ConnectTask implements Runnable {
 
@@ -310,13 +310,14 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("notification",
                             "androidpn:iq:notification",
                             new NotificationIQProvider());
-
+                    // .. addIQProvider
+                    xmppManager.runTask();
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "XMPP connection failed", e);
+                    xmppManager.dropTask(2);
+                    xmppManager.runTask();
+                    xmppManager.startReconnectionThread();
                 }
-
-                xmppManager.runTask();
-
             } else {
                 Log.i(LOGTAG, "XMPP connected already");
                 xmppManager.runTask();
@@ -325,11 +326,13 @@ public class XmppManager {
     }
 
     /**
-     * A runnable task to register a new user onto the server. 
+     * A runnable task to register a new user onto the server.
      */
     private class RegisterTask implements Runnable {
 
         final XmppManager xmppManager;
+        boolean isRegisterSucceed;
+        boolean hasDropTask;
 
         private RegisterTask() {
             xmppManager = XmppManager.this;
@@ -339,6 +342,8 @@ public class XmppManager {
             Log.i(LOGTAG, "RegisterTask.run()...");
 
             if (!xmppManager.isRegistered()) {
+                isRegisterSucceed = false;
+                hasDropTask = false;
                 final String newUsername = newRandomUUID();
                 final String newPassword = newRandomUUID();
 
@@ -351,37 +356,40 @@ public class XmppManager {
                 PacketListener packetListener = new PacketListener() {
 
                     public void processPacket(Packet packet) {
-                        Log.d("RegisterTask.PacketListener",
-                                "processPacket().....");
-                        Log.d("RegisterTask.PacketListener", "packet="
-                                + packet.toXML());
+                        synchronized (xmppManager) {
+                            Log.d("RT.PacketListener", "ProcessPacket()...");
+                            Log.d("RT.PacketListener", "packet=" + packet.toXML());
 
-                        if (packet instanceof IQ) {
-                            IQ response = (IQ) packet;
-                            if (response.getType() == IQ.Type.ERROR) {
-                                if (!response.getError().toString().contains(
-                                        "409")) {
-                                    Log.e(LOGTAG,
-                                            "Unknown error while registering XMPP account! "
-                                                    + response.getError()
-                                                            .getCondition());
+                            if (packet instanceof IQ) {
+                                IQ response = (IQ) packet;
+                                if (response.getType() == IQ.Type.ERROR) {
+                                    if (!response.getError().toString().contains(
+                                            "409")) {
+                                        Log.e(LOGTAG,
+                                                "Unknown error while registering XMPP account! "
+                                                        + response.getError()
+                                                        .getCondition());
+                                    }
+                                } else if (response.getType() == IQ.Type.RESULT) {
+                                    xmppManager.setUsername(newUsername);
+                                    xmppManager.setPassword(newPassword);
+                                    Log.d(LOGTAG, "username=" + newUsername);
+                                    Log.d(LOGTAG, "password=" + newPassword);
+
+                                    Editor editor = sharedPrefs.edit();
+                                    editor.putString(Constants.XMPP_USERNAME,
+                                            newUsername);
+                                    editor.putString(Constants.XMPP_PASSWORD,
+                                            newPassword);
+                                    editor.commit();
+                                    isRegisterSucceed = true;
+                                    Log
+                                            .i(LOGTAG,
+                                                    "Account registered successfully");
+                                    if (!hasDropTask) {
+                                        xmppManager.runTask();
+                                    }
                                 }
-                            } else if (response.getType() == IQ.Type.RESULT) {
-                                xmppManager.setUsername(newUsername);
-                                xmppManager.setPassword(newPassword);
-                                Log.d(LOGTAG, "username=" + newUsername);
-                                Log.d(LOGTAG, "password=" + newPassword);
-
-                                Editor editor = sharedPrefs.edit();
-                                editor.putString(Constants.XMPP_USERNAME,
-                                        newUsername);
-                                editor.putString(Constants.XMPP_PASSWORD,
-                                        newPassword);
-                                editor.commit();
-                                Log
-                                        .i(LOGTAG,
-                                                "Account registered successfully");
-                                xmppManager.runTask();
                             }
                         }
                     }
@@ -398,16 +406,44 @@ public class XmppManager {
                 registration.addAttribute("username", newUsername);
                 registration.addAttribute("password", newPassword);
                 connection.sendPacket(registration);
-
+                //若10s内服务器无响应
+                try {
+                    Thread.sleep(20 * 1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                synchronized (xmppManager) {
+                    if (!isRegisterSucceed) {
+                        xmppManager.dropTask(1);
+                        xmppManager.runTask();
+                        xmppManager.startReconnectionThread();
+                        hasDropTask = true;
+                    }
+                }
             } else {
                 Log.i(LOGTAG, "Account registered already");
+
                 xmppManager.runTask();
             }
         }
     }
 
     /**
-     * A runnable task to log into the server. 
+     * dropTask,不可和addTask并发执行
+     */
+    private void dropTask(int dropCount) {
+        synchronized (taskList) {
+            if (taskList.size() >= dropCount) {
+                for (int i = 0; i < dropCount; i++) {
+                    taskList.remove(0);
+                    taskTracker.decrease();
+                }
+            }
+        }
+    }
+
+    /**
+     * A runnable task to log into the server.
      */
     private class LoginTask implements Runnable {
 
@@ -428,7 +464,7 @@ public class XmppManager {
                     xmppManager.getConnection().login(
                             xmppManager.getUsername(),
                             xmppManager.getPassword(), XMPP_RESOURCE_NAME);
-                    Log.d(LOGTAG, "Loggedn in successfully");
+                    Log.d(LOGTAG, "Logged in successfully");
 
                     // connection listener
                     if (xmppManager.getConnectionListener() != null) {
@@ -443,7 +479,8 @@ public class XmppManager {
                     PacketListener packetListener = xmppManager
                             .getNotificationPacketListener();
                     connection.addPacketListener(packetListener, packetFilter);
-
+//向服务器发送心跳数据包
+//                    connection.startHeartBeat();
                     xmppManager.runTask();
 
                 } catch (XMPPException e) {
@@ -454,25 +491,24 @@ public class XmppManager {
                     String errorMessage = e.getMessage();
                     if (errorMessage != null
                             && errorMessage
-                                    .contains(INVALID_CREDENTIALS_ERROR_CODE)) {
+                            .contains(INVALID_CREDENTIALS_ERROR_CODE)) {
                         xmppManager.reregisterAccount();
                         return;
                     }
                     xmppManager.startReconnectionThread();
-
                 } catch (Exception e) {
                     Log.e(LOGTAG, "LoginTask.run()... other error");
                     Log.e(LOGTAG, "Failed to login to xmpp server. Caused by: "
                             + e.getMessage());
                     xmppManager.startReconnectionThread();
+                } finally {
+                    xmppManager.runTask();
                 }
 
             } else {
                 Log.i(LOGTAG, "Logged in already");
                 xmppManager.runTask();
             }
-
         }
     }
-
 }
