@@ -16,6 +16,7 @@
 package org.androidpn.client;
 
 import org.jivesoftware.smack.PacketListener;
+import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.packet.Packet;
 
 import android.content.Intent;
@@ -23,8 +24,9 @@ import android.util.Log;
 
 /** 
  * This class notifies the receiver of incoming notifcation packets asynchronously.  
+ * 客户端接收解析服务器端到达的消息
+ * 接收到消息后向服务器提交回执
  *
- * @author Sehwan Noh (devnoh@gmail.com)
  */
 public class NotificationPacketListener implements PacketListener {
 
@@ -64,12 +66,13 @@ public class NotificationPacketListener implements PacketListener {
                 intent.putExtra(Constants.NOTIFICATION_MESSAGE,
                         notificationMessage);
                 intent.putExtra(Constants.NOTIFICATION_URI, notificationUri);
-                //                intent.setData(Uri.parse((new StringBuilder(
-                //                        "notif://notification.androidpn.org/")).append(
-                //                        notificationApiKey).append("/").append(
-                //                        System.currentTimeMillis()).toString()));
 
                 xmppManager.getContext().sendBroadcast(intent);
+                //发送已收到回执
+                DeliverConfirmIQ deliverConfirmIQ = new DeliverConfirmIQ();
+                deliverConfirmIQ.setUuid(notificationId);
+                deliverConfirmIQ.setType(IQ.Type.SET);
+                xmppManager.getConnection().sendPacket(deliverConfirmIQ);
             }
         }
 
