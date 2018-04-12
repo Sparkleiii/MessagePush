@@ -1,18 +1,4 @@
-/*
- * Copyright (C) 2010 Moduad Co., Ltd.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package org.androidpn.client;
 
 import java.util.Random;
@@ -32,19 +18,15 @@ import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-/**
- * Service that continues to run in background and respond to the push 
- * notification events from the server. This should be registered as service
- * in AndroidManifest.xml. 
- * 
- * @author Sehwan Noh (devnoh@gmail.com)
- */
+
 public class NotificationService extends Service {
 
     private static final String LOGTAG = LogUtil
             .makeLogTag(NotificationService.class);
 
     public static final String SERVICE_NAME = "org.androidpn.client.NotificationService";
+
+    private static NotificationService notificationService;
 
     private TelephonyManager telephonyManager;
 
@@ -79,9 +61,14 @@ public class NotificationService extends Service {
         taskTracker = new TaskTracker(this);
     }
 
+    public static NotificationService getNotificationService(){
+        return notificationService;
+    }
+
     @Override
     public void onCreate() {
         Log.d(LOGTAG, "onCreate()...");
+        notificationService = this;
         telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         // wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
         // connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -113,8 +100,6 @@ public class NotificationService extends Service {
         Log.d(LOGTAG, "deviceId=" + deviceId);
 
         xmppManager = new XmppManager(this);
-
-
         taskSubmitter.submit(new Runnable() {
             public void run() {
                 NotificationService.this.start();
@@ -130,6 +115,7 @@ public class NotificationService extends Service {
     @Override
     public void onDestroy() {
         Log.d(LOGTAG, "onDestroy()...");
+        notificationService = null;
         stop();
     }
 

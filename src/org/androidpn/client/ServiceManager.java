@@ -1,14 +1,17 @@
 
 package org.androidpn.client;
 
-import java.util.Properties;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.text.TextUtils;
 import android.util.Log;
+import org.jivesoftware.smack.packet.IQ;
+
+import java.util.List;
+import java.util.Properties;
 
 
 public final class ServiceManager {
@@ -99,13 +102,80 @@ public final class ServiceManager {
         return props;
     }
 
-    //    public String getVersion() {
-    //        return version;
-    //    }
-    //
-    //    public String getApiKey() {
-    //        return apiKey;
-    //    }
+    public void setAlias(String alias) {
+        String username = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
+        if (TextUtils.isEmpty(alias) || TextUtils.isEmpty(username)) {
+            return;
+        }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                NotificationService notificationService = NotificationService.getNotificationService();
+                XmppManager xmppManager = notificationService.getXmppManager();
+                if (xmppManager!=null){
+                    if(!xmppManager.isAuthenticated()){
+                        try {
+                            synchronized (xmppManager){
+                                xmppManager.wait();
+                            }
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    SetAliasIQ iq = new SetAliasIQ();
+                    iq.setType(IQ.Type.SET);
+                    iq.setUsername(username);
+                    iq.setAlias(alias);
+                    xmppManager.getConnection().sendPacket(iq);
+                }
+
+
+            }
+        }).start();
+
+    }
+    public void setTags(List<String> tagList){
+        final String username = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
+        if (TextUtils.isEmpty(username) || tagList.isEmpty()|| tagList==null) {
+            return;
+        }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    Thread.sleep(1000);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                NotificationService notificationService = NotificationService.getNotificationService();
+                XmppManager xmppManager = notificationService.getXmppManager();
+                if(xmppManager!=null){
+                    if(!xmppManager.isAuthenticated()){
+                        try {
+                            synchronized (xmppManager){
+                                Log.d(LOGTAG,"wating for auth...");
+                                xmppManager.wait();
+                            }
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    Log.d(LOGTAG,"SetTagsIQ...");
+                    SetTagsIQ iq = new SetTagsIQ();
+                    iq.setType(IQ.Type.SET);
+                    iq.setTagList(tagList);
+                    iq.setUsername(username);
+                    Log.d(LOGTAG,"username+++++"+username);
+                    xmppManager.getConnection().sendPacket(iq);
+                }
+            }
+        }).start();
+    }
 
     public void setNotificationIcon(int iconId) {
         Editor editor = sharedPrefs.edit();
@@ -113,11 +183,6 @@ public final class ServiceManager {
         editor.commit();
     }
 
-    //    public void viewNotificationSettings() {
-    //        Intent intent = new Intent().setClass(context,
-    //                NotificationSettingsActivity.class);
-    //        context.startActivity(intent);
-    //    }
 
     public static void viewNotificationSettings(Context context) {
         Intent intent = new Intent().setClass(context,

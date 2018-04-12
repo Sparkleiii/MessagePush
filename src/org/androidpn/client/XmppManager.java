@@ -224,7 +224,7 @@ public class XmppManager {
         return connection != null && connection.isConnected();
     }
 
-    private boolean isAuthenticated() {
+    public boolean isAuthenticated() {
         return connection != null && connection.isConnected()
                 && connection.isAuthenticated();
     }
@@ -310,6 +310,8 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("notification",
                             "androidpn:iq:notification",
                             new NotificationIQProvider());
+
+
                     // .. addIQProvider
                     xmppManager.runTask();
                 } catch (XMPPException e) {
@@ -481,8 +483,11 @@ public class XmppManager {
                     connection.addPacketListener(packetListener, packetFilter);
 //向服务器发送心跳数据包
 //                    connection.startHeartBeat();
-                    xmppManager.runTask();
-
+//                    xmppManager.runTask();
+                    synchronized (xmppManager){
+                        Log.d(LOGTAG,"pass...");
+                        xmppManager.notifyAll();
+                    }
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "LoginTask.run()... xmpp error");
                     Log.e(LOGTAG, "Failed to login to xmpp server. Caused by: "

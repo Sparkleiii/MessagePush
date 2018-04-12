@@ -85,10 +85,22 @@
       <DataType>varchar(64)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="25" parent="8" name="PRIMARY">
+    <column id="25" parent="8" name="uuid">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <index id="26" parent="8" name="uuid">
+      <ColNames>uuid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="8" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+    </key>
+    <key id="28" parent="8" name="uuid">
+      <ColNames>uuid</ColNames>
+      <UnderlyingIndexName>uuid</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

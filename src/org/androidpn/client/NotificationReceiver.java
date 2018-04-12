@@ -20,12 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-/** 
- * Broadcast receiver that handles push notification messages from the server.
- * This should be registered as receiver in AndroidManifest.xml. 
- * 
- * @author Sehwan Noh (devnoh@gmail.com)
- */
 public final class NotificationReceiver extends BroadcastReceiver {
 
     private static final String LOGTAG = LogUtil

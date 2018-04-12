@@ -35,10 +35,19 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="litepal-1.2.0-src" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/libs/asmack.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/gson-2.3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

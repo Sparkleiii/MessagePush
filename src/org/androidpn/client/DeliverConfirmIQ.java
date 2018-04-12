@@ -21,7 +21,7 @@ public class DeliverConfirmIQ extends IQ {
         if (uuid != null) {
             buf.append("<uuid>").append(uuid).append("</uuid>");
         }
-        buf.append("</").append("notification").append("> ");
+        buf.append("</").append("deliverconfirm").append("> ");
         return buf.toString();
     }
 

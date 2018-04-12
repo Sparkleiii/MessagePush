@@ -3,7 +3,6 @@ package org.androidpn.client;
 
 import org.jivesoftware.smack.packet.IQ;
 
-
 public class NotificationIQ extends IQ {
 
     private String id;

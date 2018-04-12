@@ -23,6 +23,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * This is an androidpn client demo application.
  * 
@@ -49,6 +52,14 @@ public class DemoAppActivity extends Activity {
         ServiceManager serviceManager = new ServiceManager(this);
         serviceManager.setNotificationIcon(R.drawable.icon_main_small);
         serviceManager.startService();
+        serviceManager.setAlias("123");
+        List<String> tagsList = new ArrayList<String>();
+        tagsList.add("sports");
+        tagsList.add("music");
+        serviceManager.setTags(tagsList);
+
+
+
     }
 
 }
