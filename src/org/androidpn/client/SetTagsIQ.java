@@ -37,7 +37,7 @@ public class SetTagsIQ extends IQ {
         if(tagList !=null && !tagList.isEmpty()){
             buf.append("<tags>");
             for(int i=0;i<tagList.size();i++){
-                if(i!=tagList.size()){
+                if(i!=tagList.size()-1){
                     buf.append(tagList.get(i)).append(",");
                 }else
                     buf.append(tagList.get(i));

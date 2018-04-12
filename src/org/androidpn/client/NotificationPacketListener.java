@@ -1,12 +1,16 @@
 
 package org.androidpn.client;
 
+import org.androidpn.model.NotificationHistory;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.packet.Packet;
 
 import android.content.Intent;
 import android.util.Log;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /** 
  *
@@ -41,6 +45,7 @@ public class NotificationPacketListener implements PacketListener {
                 String notificationMessage = notification.getMessage();
                 //                String notificationTicker = notification.getTicker();
                 String notificationUri = notification.getUri();
+                String notificationImageUrl = notification.getImageUrl();
 
                 Intent intent = new Intent(Constants.ACTION_SHOW_NOTIFICATION);
                 intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
@@ -52,6 +57,19 @@ public class NotificationPacketListener implements PacketListener {
                 intent.putExtra(Constants.NOTIFICATION_MESSAGE,
                         notificationMessage);
                 intent.putExtra(Constants.NOTIFICATION_URI, notificationUri);
+                intent.putExtra(Constants.NOTIFICATION_IMAGE_URL, notificationImageUrl);
+
+                //保存消息至历史消息
+                NotificationHistory history = new NotificationHistory();
+                history.setApiKey(notificationApiKey);
+                history.setImageUrl(notificationImageUrl);
+                history.setMessage(notificationMessage);
+                history.setTitle(notificationTitle);
+                history.setUri(notificationUri);
+                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+                String time = df.format(new Date());
+                history.setTime(time);
+                history.save();
 
                 xmppManager.getContext().sendBroadcast(intent);
                 //发送已收到回执

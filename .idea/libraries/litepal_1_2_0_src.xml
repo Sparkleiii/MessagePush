@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libs/litepal-1.2.0-src.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/MD5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/volley.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/asmack.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

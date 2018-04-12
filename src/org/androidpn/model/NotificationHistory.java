@@ -1,12 +1,8 @@
+package org.androidpn.model;
 
-package org.androidpn.client;
+import org.litepal.crud.DataSupport;
 
-import org.jivesoftware.smack.packet.IQ;
-
-public class NotificationIQ extends IQ {
-
-    private String id;
-
+public class NotificationHistory extends DataSupport{
     private String apiKey;
 
     private String title;
@@ -17,27 +13,14 @@ public class NotificationIQ extends IQ {
 
     private String imageUrl;
 
-    public NotificationIQ() {
+    private String time;
+
+    public String getTime() {
+        return time;
     }
 
-    @Override
-    public String getChildElementXML() {
-        StringBuilder buf = new StringBuilder();
-        buf.append("<").append("notification").append(" xmlns=\"").append(
-                "androidpn:iq:notification").append("\">");
-        if (id != null) {
-            buf.append("<id>").append(id).append("</id>");
-        }
-        buf.append("</").append("notification").append("> ");
-        return buf.toString();
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getApiKey() {
@@ -68,8 +51,8 @@ public class NotificationIQ extends IQ {
         return uri;
     }
 
-    public void setUri(String url) {
-        this.uri = url;
+    public void setUri(String uri) {
+        this.uri = uri;
     }
 
     public String getImageUrl() {

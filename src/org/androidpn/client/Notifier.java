@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.Toast;
+import org.androidpn.demoapp.ImageActivity;
 
 
 public class Notifier {
@@ -34,7 +35,7 @@ public class Notifier {
     }
 
     public void notify(String notificationId, String apiKey, String title,
-            String message, String uri) {
+            String message, String uri,String imageUrl) {
         Log.d(LOGTAG, "notify()...");
 
         Log.d(LOGTAG, "notificationId=" + notificationId);
@@ -42,6 +43,7 @@ public class Notifier {
         Log.d(LOGTAG, "notificationTitle=" + title);
         Log.d(LOGTAG, "notificationMessage=" + message);
         Log.d(LOGTAG, "notificationUri=" + uri);
+        Log.d(LOGTAG, "notificationImageUrl=" + imageUrl);
 
         if (isNotificationEnabled()) {
             // Show the toast
@@ -81,12 +83,14 @@ public class Notifier {
             //            }
 
             Intent intent = new Intent(context,
-                    NotificationDetailsActivity.class);
+                    ImageActivity.class);
             intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
             intent.putExtra(Constants.NOTIFICATION_API_KEY, apiKey);
             intent.putExtra(Constants.NOTIFICATION_TITLE, title);
             intent.putExtra(Constants.NOTIFICATION_MESSAGE, message);
             intent.putExtra(Constants.NOTIFICATION_URI, uri);
+            intent.putExtra(Constants.NOTIFICATION_IMAGE_URL,imageUrl);
+
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
             intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
