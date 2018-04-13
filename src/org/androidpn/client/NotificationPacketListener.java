@@ -1,6 +1,8 @@
 
 package org.androidpn.client;
 
+import org.androidpn.iq.DeliverConfirmIQ;
+import org.androidpn.iq.NotificationIQ;
 import org.androidpn.model.NotificationHistory;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.IQ;

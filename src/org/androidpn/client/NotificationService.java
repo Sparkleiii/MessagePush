@@ -17,6 +17,8 @@ import android.os.IBinder;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import org.androidpn.receiver.ConnectivityReceiver;
+import org.androidpn.receiver.NotificationReceiver;
 
 
 public class NotificationService extends Service {

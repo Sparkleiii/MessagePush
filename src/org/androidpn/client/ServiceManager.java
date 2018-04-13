@@ -8,6 +8,10 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.text.TextUtils;
 import android.util.Log;
+import org.androidpn.demoapp.NotificationSettingsActivity;
+import org.androidpn.iq.LoginIQ;
+import org.androidpn.iq.SetAliasIQ;
+import org.androidpn.iq.SetTagsIQ;
 import org.jivesoftware.smack.packet.IQ;
 
 import java.util.List;
@@ -102,6 +106,42 @@ public final class ServiceManager {
         return props;
     }
 
+    public void Login(String uname,String upwd) {
+        String uid = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
+        if (TextUtils.isEmpty(uid) || TextUtils.isEmpty(uname)||TextUtils.isEmpty(upwd)) {
+            return;
+        }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                NotificationService notificationService = NotificationService.getNotificationService();
+                XmppManager xmppManager = notificationService.getXmppManager();
+                if (xmppManager!=null){
+                    if(!xmppManager.isAuthenticated()){
+                        try {
+                            synchronized (xmppManager){
+                                xmppManager.wait();
+                            }
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    LoginIQ iq = new LoginIQ();
+                    iq.setType(IQ.Type.SET);
+                    iq.setUid(uid);
+                    iq.setUname(uname);
+                    iq.setUpwd(upwd);
+                    xmppManager.getConnection().sendPacket(iq);
+                }
+            }
+        }).start();
+    }
+
     public void setAlias(String alias) {
         String username = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
         if (TextUtils.isEmpty(alias) || TextUtils.isEmpty(username)) {
@@ -137,8 +177,8 @@ public final class ServiceManager {
 
             }
         }).start();
-
     }
+
     public void setTags(List<String> tagList){
         final String username = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
         if (TextUtils.isEmpty(username) || tagList.isEmpty()|| tagList==null) {
@@ -176,6 +216,8 @@ public final class ServiceManager {
             }
         }).start();
     }
+
+
 
     public void setNotificationIcon(int iconId) {
         Editor editor = sharedPrefs.edit();

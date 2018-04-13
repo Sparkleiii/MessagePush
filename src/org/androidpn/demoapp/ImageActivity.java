@@ -4,8 +4,12 @@ package org.androidpn.demoapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
@@ -17,15 +21,13 @@ public class ImageActivity extends Activity {
     private TextView title;
     private TextView content;
     private RequestQueue mQueue;
+    private Button btn_ok;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
-        String notificationId = intent
-                .getStringExtra(Constants.NOTIFICATION_ID);
-        String notificationApiKey = intent
-                .getStringExtra(Constants.NOTIFICATION_API_KEY);
         String notificationTitle = intent
                 .getStringExtra(Constants.NOTIFICATION_TITLE);
         String notificationMessage = intent
@@ -51,7 +53,36 @@ public class ImageActivity extends Activity {
         title.setText(notificationTitle);
         content.setText(notificationMessage);
         networkImageView.setImageUrl(url,imageLoader);
+
+        btn_ok = (Button) findViewById(R.id.btn_image_ok);
+        btn_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1;
+                if (notificationUri != null
+                        && notificationUri.length() > 0
+                        && (notificationUri.startsWith("http:") || notificationUri.startsWith("https:")
+                        || notificationUri.startsWith("tel:") || notificationUri
+                        .startsWith("geo:"))) {
+                    intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(notificationUri));
+                    startActivity(intent1);
+                } else {
+                    finish();
+                }
+            }
+        });
+
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

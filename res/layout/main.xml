@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
->
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:layout_marginTop="100dip"
-            android:gravity="center_horizontal"
-            android:text="@string/hello"
-            android:textSize="16sp"
-            android:textStyle="bold"
-    />
-    <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <org.androidpn.view.SlidingMenu
+            android:id="@+id/sliding_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
     >
-        <Button
-                android:id="@+id/btn_histories"
+        <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="76dp"
-                android:text="@string/histories"
-        />
-        <Button
-                android:id="@+id/btn_settings"
-                android:layout_width="wrap_content"
-                android:layout_height="76dp"
-                android:text="@string/settings"
-        />
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+        >
+            <include layout="@layout/left_menu"></include>
+            <!--主布局-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            >
+                <Button
+                        android:onClick="toggleMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/changeMenu"
+                />
+                <Button
+                        android:id="@+id/btn_histories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/histories">
+                </Button>
+                <Button
+                        android:id="@+id/btn_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings">
+                </Button>
+            </LinearLayout>
 
-    </LinearLayout>
-
-</LinearLayout>
+        </LinearLayout>
+    </org.androidpn.view.SlidingMenu>
+</RelativeLayout>

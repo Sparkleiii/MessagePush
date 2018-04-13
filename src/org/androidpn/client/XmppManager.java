@@ -20,6 +20,8 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.Future;
 
+import org.androidpn.iq.NotificationIQ;
+import org.androidpn.provider.NotificationIQProvider;
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.ConnectionListener;
 import org.jivesoftware.smack.PacketListener;

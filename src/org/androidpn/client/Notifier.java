@@ -65,23 +65,6 @@ public class Notifier {
             notification.when = System.currentTimeMillis();
             notification.tickerText = message;
 
-            //            Intent intent;
-            //            if (uri != null
-            //                    && uri.length() > 0
-            //                    && (uri.startsWith("http:") || uri.startsWith("https:")
-            //                            || uri.startsWith("tel:") || uri.startsWith("geo:"))) {
-            //                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-            //            } else {
-            //                String callbackActivityPackageName = sharedPrefs.getString(
-            //                        Constants.CALLBACK_ACTIVITY_PACKAGE_NAME, "");
-            //                String callbackActivityClassName = sharedPrefs.getString(
-            //                        Constants.CALLBACK_ACTIVITY_CLASS_NAME, "");
-            //                intent = new Intent().setClassName(callbackActivityPackageName,
-            //                        callbackActivityClassName);
-            //                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            //                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            //            }
-
             Intent intent = new Intent(context,
                     ImageActivity.class);
             intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
