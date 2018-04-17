@@ -8,12 +8,23 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.text.TextUtils;
 import android.util.Log;
+import com.google.gson.Gson;
 import org.androidpn.demoapp.NotificationSettingsActivity;
-import org.androidpn.iq.LoginIQ;
 import org.androidpn.iq.SetAliasIQ;
 import org.androidpn.iq.SetTagsIQ;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
 import org.jivesoftware.smack.packet.IQ;
 
+import java.io.IOException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -37,9 +48,135 @@ public final class ServiceManager {
 
     private String xmppPort;
 
+    private String url = null;
+
     private String callbackActivityPackageName;
 
     private String callbackActivityClassName;
+
+    private Boolean sign = true;
+
+    private String jsonData = null;
+
+    private List<NameValuePair> params = new ArrayList<NameValuePair>();
+
+    private Gson gson = new Gson();
+
+    private boolean hasBeenStarted = false;
+
+    public ServiceManager() {
+    }
+
+    public ServiceManager(Context context, List<NameValuePair> params, String url) {
+        this.context = context;
+        this.params = params;
+        this.url = url;
+    }
+
+    public void postInfo(){
+        xmppHost = "http://192.168.1.102:8080";
+        HttpPost httpRequest = new HttpPost(xmppHost+getUrl());
+        try {
+            //设置请求参数项
+//            URLEncoder.encode(params);
+            httpRequest.setEntity(new UrlEncodedFormEntity(params,HTTP.UTF_8));
+            HttpClient httpClient = new DefaultHttpClient();
+            //中文乱码
+//            httpRequest.addHeader("Content-Type", "text/html");
+//            httpRequest.addHeader("charset", HTTP.UTF_8);
+            //执行请求并返回响应
+            HttpResponse httpResponse = httpClient.execute(httpRequest);
+            //判断是否请求成功
+            if(httpResponse.getStatusLine().getStatusCode() == 200){
+                this.setJsonData(EntityUtils.toString(httpResponse.getEntity(), "UTF-8"));
+                System.out.println(")))))))))))))))))))"+jsonData);
+                if ("error".equals(jsonData)){
+                    this.setSign(false);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 启动服务
+     * @param serviceHelper
+     */
+    public void start(ServiceManager serviceHelper){
+        new Thread(send).start();
+//        serviceHelper.execute.start();
+//        serviceHelper.execute.run();
+
+    }
+
+    Runnable send = new Runnable() {
+        @Override
+        public void run() {
+            postInfo();
+        }
+    };
+
+    public Thread execute = new Thread(new Runnable(){
+        @Override
+        public void run() {
+            postInfo();
+        }
+    });
+
+    //向服务器端发送请求
+    public ServiceManager RequestToServer(ServiceManager serviceHelper){
+        start(serviceHelper);
+        try {
+            synchronized (serviceHelper.execute) {
+                serviceHelper.execute.wait(400);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        serviceHelper.execute.interrupt();
+        return serviceHelper;
+    }
+
+    public Context getContext() {
+        return context;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+    public List<NameValuePair> getParams() {
+        return params;
+    }
+
+    public void setParams(List<NameValuePair> params) {
+        this.params = params;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Boolean getSign() {
+        return sign;
+    }
+
+    public void setSign(Boolean sign) {
+        this.sign = sign;
+    }
+
+    public String getJsonData() {
+        return jsonData;
+    }
+
+    public void setJsonData(String jsonData) {
+        this.jsonData = jsonData;
+    }
 
     public ServiceManager(Context context) {
         this.context = context;
@@ -104,42 +241,6 @@ public final class ServiceManager {
             // e.printStackTrace();
         }
         return props;
-    }
-
-    public void Login(String uname,String upwd) {
-        String uid = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
-        if (TextUtils.isEmpty(uid) || TextUtils.isEmpty(uname)||TextUtils.isEmpty(upwd)) {
-            return;
-        }
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                NotificationService notificationService = NotificationService.getNotificationService();
-                XmppManager xmppManager = notificationService.getXmppManager();
-                if (xmppManager!=null){
-                    if(!xmppManager.isAuthenticated()){
-                        try {
-                            synchronized (xmppManager){
-                                xmppManager.wait();
-                            }
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    LoginIQ iq = new LoginIQ();
-                    iq.setType(IQ.Type.SET);
-                    iq.setUid(uid);
-                    iq.setUname(uname);
-                    iq.setUpwd(upwd);
-                    xmppManager.getConnection().sendPacket(iq);
-                }
-            }
-        }).start();
     }
 
     public void setAlias(String alias) {

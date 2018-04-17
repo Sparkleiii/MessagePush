@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.Future;
 
+import android.content.Intent;
 import org.androidpn.iq.NotificationIQ;
 import org.androidpn.provider.NotificationIQProvider;
 import org.jivesoftware.smack.ConnectionConfiguration;
@@ -76,6 +77,8 @@ public class XmppManager {
 
     private PacketListener notificationPacketListener;
 
+    private ReplyPacketListener replyPacketListener;
+
     private Handler handler;
 
     private List<Runnable> taskList;
@@ -91,7 +94,6 @@ public class XmppManager {
         taskSubmitter = notificationService.getTaskSubmitter();
         taskTracker = notificationService.getTaskTracker();
         sharedPrefs = notificationService.getSharedPreferences();
-
         xmppHost = sharedPrefs.getString(Constants.XMPP_HOST, "localhost");
         xmppPort = sharedPrefs.getInt(Constants.XMPP_PORT, 5222);
         username = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
@@ -99,6 +101,7 @@ public class XmppManager {
 
         connectionListener = new PersistentConnectionListener(this);
         notificationPacketListener = new NotificationPacketListener(this);
+        replyPacketListener = new ReplyPacketListener(this);
 
         handler = new Handler();
         taskList = new ArrayList<Runnable>();
@@ -402,11 +405,6 @@ public class XmppManager {
                 connection.addPacketListener(packetListener, packetFilter);
 
                 registration.setType(IQ.Type.SET);
-                // registration.setTo(xmppHost);
-                // Map<String, String> attributes = new HashMap<String, String>();
-                // attributes.put("username", rUsername);
-                // attributes.put("password", rPassword);
-                // registration.setAttributes(attributes);
                 registration.addAttribute("username", newUsername);
                 registration.addAttribute("password", newPassword);
                 connection.sendPacket(registration);
@@ -517,5 +515,11 @@ public class XmppManager {
                 xmppManager.runTask();
             }
         }
+    }
+    public void sendBroadcastConnectLogin() {
+        // 连接为登录成功状态，发送广播
+        Intent intent = new Intent(Constants.ACTION_CONNECT_LOGIN_ACK);
+        intent.putExtra("ecode", "100");
+        context.sendBroadcast(intent);
     }
 }

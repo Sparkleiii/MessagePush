@@ -27,6 +27,10 @@ public class Constants {
 
     public static final String DEVICE_ID = "DEVICE_ID";
 
+    public static final String USER_ACCOUNT = "USER_ACCOUNT";
+
+    public static final String USER_PASSWORD = "USER_PASSWORD";
+
     public static final String EMULATOR_DEVICE_ID = "EMULATOR_DEVICE_ID";
 
     public static final String NOTIFICATION_ICON = "NOTIFICATION_ICON";
@@ -38,6 +42,11 @@ public class Constants {
     public static final String SETTINGS_VIBRATE_ENABLED = "SETTINGS_VIBRATE_ENABLED";
 
     public static final String SETTINGS_TOAST_ENABLED = "SETTINGS_TOAST_ENABLED";
+
+    //Login
+
+   /* public static final String LOGIN_UNAME = "LOGIN_UNAME";
+    public static final String LOGIN_UPWD = "LOGIN_UPWD";*/
 
     // NOTIFICATION FIELDS
 
@@ -61,4 +70,17 @@ public class Constants {
 
     public static final String ACTION_NOTIFICATION_CLEARED = "org.androidpn.client.NOTIFICATION_CLEARED";
 
+    public static final String ACTION_USER_LOGIN = "userlogin";
+
+    public static final String ACTION_USER_REGISTER = "userregister";
+
+    public static final String ACTION_CONNECT_LOGIN_ACK= "connectlogin_ack";
+
+    //..reply 参数
+    public static final String REPLY_ECODE = "ecode";
+    public static final String REPLY_EMSG = "emsg";
+    //..config 参数
+    public static String getActionReply(String action){
+        return action+"_REPLY";
+    }
 }

@@ -28,7 +28,7 @@ public class NotificationService extends Service {
 
     public static final String SERVICE_NAME = "org.androidpn.client.NotificationService";
 
-    private static NotificationService notificationService;
+    public static NotificationService notificationService;
 
     private TelephonyManager telephonyManager;
 
@@ -54,8 +54,9 @@ public class NotificationService extends Service {
 
     private String deviceId;
 
+
     public NotificationService() {
-        notificationReceiver = new NotificationReceiver();
+        notificationReceiver = new NotificationReceiver(this);
         connectivityReceiver = new ConnectivityReceiver(this);
         phoneStateListener = new PhoneStateChangeListener(this);
         executorService = Executors.newSingleThreadExecutor();
@@ -184,11 +185,14 @@ public class NotificationService extends Service {
         });
     }
 
+    //设置intent过滤器
     private void registerNotificationReceiver() {
         IntentFilter filter = new IntentFilter();
         filter.addAction(Constants.ACTION_SHOW_NOTIFICATION);
         filter.addAction(Constants.ACTION_NOTIFICATION_CLICKED);
         filter.addAction(Constants.ACTION_NOTIFICATION_CLEARED);
+        filter.addAction(Constants.ACTION_USER_LOGIN);
+        filter.addAction(Constants.ACTION_USER_REGISTER);
         registerReceiver(notificationReceiver, filter);
     }
 

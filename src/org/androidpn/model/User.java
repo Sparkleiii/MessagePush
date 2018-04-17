@@ -2,13 +2,14 @@ package org.androidpn.model;
 
 import org.litepal.crud.DataSupport;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class User extends DataSupport{
+public class User extends DataSupport implements Serializable{
 
     private String username;
     private String password;
-    private List<Tags> tagsList;
+    private List<String> tagsList;
 
     public String getUsername() {
         return username;
@@ -26,11 +27,11 @@ public class User extends DataSupport{
         this.password = password;
     }
 
-    public List<Tags> getTagsList() {
+    public List<String> getTagsList() {
         return tagsList;
     }
 
-    public void setTagsList(List<Tags> tagsList) {
+    public void setTagsList(List<String> tagsList) {
         this.tagsList = tagsList;
     }
 

@@ -21,8 +21,10 @@
 				android:value="org.androidpn.demoapp.ParentActivity">
 			</meta-data>
 		</activity>
-		<activity android:name=".NotificationHistoryActivity"
-				  android:label="@string/history">
+        <activity android:name=".SetTagsActivity"
+                  android:label="@string/setTags"
+		>
+
 		</activity>
 
 		<activity android:name=".NotificationSettingsActivity"

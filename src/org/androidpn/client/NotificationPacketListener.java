@@ -1,13 +1,14 @@
 
 package org.androidpn.client;
 
+import org.androidpn.demoapp.DemoAppActivity;
 import org.androidpn.iq.DeliverConfirmIQ;
 import org.androidpn.iq.NotificationIQ;
 import org.androidpn.model.NotificationHistory;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.packet.Packet;
-
+import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
@@ -26,6 +27,8 @@ public class NotificationPacketListener implements PacketListener {
             .makeLogTag(NotificationPacketListener.class);
 
     private final XmppManager xmppManager;
+
+    private Context context;
 
     public NotificationPacketListener(XmppManager xmppManager) {
         this.xmppManager = xmppManager;
@@ -81,7 +84,6 @@ public class NotificationPacketListener implements PacketListener {
                 xmppManager.getConnection().sendPacket(deliverConfirmIQ);
             }
         }
-
     }
 
 }

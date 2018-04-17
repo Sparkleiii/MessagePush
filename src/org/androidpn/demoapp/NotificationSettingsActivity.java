@@ -26,7 +26,6 @@ public class NotificationSettingsActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
         setPreferenceScreen(createPreferenceHierarchy());
         setPreferenceDependencies();
-
         CheckBoxPreference notifyPref = (CheckBoxPreference) getPreferenceManager()
                 .findPreference(Constants.SETTINGS_NOTIFICATION_ENABLED);
         if (notifyPref.isChecked()) {
