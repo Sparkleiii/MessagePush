@@ -8,4 +8,18 @@
         <item >成人应届本科毕业生</item>
         <item >其他人员</item>
     </string-array>
+    <string-array name="exam_type">
+        <item >全国统考</item>
+        <item >单独考试</item>
+        <item >管理类联考</item>
+        <item >法硕联考</item>
+        <item >强军计划</item>
+        <item >援藏计划</item>
+        <item >保研</item>
+    </string-array>
+    <string-array name="english_type">
+        <item >英语一</item>
+        <item >英语二</item>
+    </string-array>
+
 </resources>

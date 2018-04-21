@@ -3,12 +3,17 @@ package org.androidpn.fragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+import com.android.volley.toolbox.Volley;
 import org.androidpn.client.Constants;
 import org.androidpn.client.LogUtil;
 import org.androidpn.demoapp.ImageActivity;
@@ -24,13 +29,17 @@ public class HistoryFragment extends Fragment{
             .makeLogTag(HistoryFragment.class);
     private ListView mlistView;
     private NotificationHistoryAdapter mAdapter;
-    private List<NotificationHistory> mlist = new ArrayList<NotificationHistory>();
+    private NetworkImageView niv_imageView;
+    private List<NotificationHistory> mlist = new ArrayList<>();
+    private RequestQueue mQueue;
+    private String url;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.notification_history,container,false);
-        mlist = DataSupport.findAll(NotificationHistory.class);
-        mlistView = (ListView)view.findViewById(R.id.list_view_history);
+        initView(view);
+
         /**
          * item点击事件
          * **/
@@ -38,9 +47,6 @@ public class HistoryFragment extends Fragment{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 NotificationHistory history = mlist.get(position);
-                /**
-                 * 可能错
-                 */
                 Intent intent = new Intent(view.getContext(),
                         ImageActivity.class);
                 intent.putExtra(Constants.NOTIFICATION_API_KEY, history.getApiKey());
@@ -78,6 +84,13 @@ public class HistoryFragment extends Fragment{
         }
         return super.onContextItemSelected(item);
     }
+
+    //初始化控件
+    private void initView(View view) {
+        mlist = DataSupport.findAll(NotificationHistory.class);
+        mlistView = (ListView)view.findViewById(R.id.list_view_history);
+        mQueue = Volley.newRequestQueue(view.getContext());
+    }
     /**
      * NotificationHistoryAdapter--->NotificationHistory
      * */
@@ -98,10 +111,26 @@ public class HistoryFragment extends Fragment{
             }
             TextView titleTextView = (TextView) view.findViewById(R.id.tv_titles);
             TextView timeTextView = (TextView) view.findViewById(R.id.tv_time);
+            niv_imageView = (NetworkImageView) view.findViewById(R.id.niv_imageView);
             titleTextView.setText(history.getTitle());
             timeTextView.setText(history.getTime());
+            /**
+             * 加载网络图片
+             */
+            ImageLoader imageLoader = new ImageLoader(mQueue, new ImageLoader.ImageCache() {
+                @Override
+                public Bitmap getBitmap(String s) {
+                    return null;
+                }
+                @Override
+                public void putBitmap(String s, Bitmap bitmap) {
+                }
+            });
+            url = history.getImageUrl();
+            niv_imageView.setImageUrl(url,imageLoader);
             return view;
         }
     }
+
 
 }

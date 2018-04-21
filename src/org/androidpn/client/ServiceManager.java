@@ -23,7 +23,6 @@ import org.apache.http.util.EntityUtils;
 import org.jivesoftware.smack.packet.IQ;
 
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -75,7 +74,8 @@ public final class ServiceManager {
 
     public void postInfo(){
 //        xmppHost = "http://192.168.1.103:8080";
-        xmppHost = "http://172.25.69.146:8080";
+//        xmppHost = "http://172.25.69.146:8080";
+        xmppHost = "http://192.168.137.206:8080";
         HttpPost httpRequest = new HttpPost(xmppHost+getUrl());
         try {
             //设置请求参数项

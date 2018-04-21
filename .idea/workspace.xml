@@ -12,6 +12,48 @@
   <component name="ChangeListManager">
     <list default="true" id="ca088191-f9fd-44a4-b45c-e074e89b440d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/androidpn-client.apk" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/androidpn-client.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/androidpn-client.unaligned.apk" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/androidpn-client.unaligned.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/layout/image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/layout/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/layout/notification_history_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/notification_history_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/layout/register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/layout/set_tags.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/set_tags.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$array.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$array.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$attr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$raw.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$raw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/RegisterActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/RegisterActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$NotificationHistoryAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$NotificationHistoryAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/raw/androidpn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/raw/androidpn.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/values/arrays.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/classes/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/notification_history_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/notification_history_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/set_tags.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/set_tags.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/raw/androidpn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/raw/androidpn.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/arrays.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/demoapp/ImageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/demoapp/ImageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,25 +66,75 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="androidpn-client" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tab_settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/tab_settings.xml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="android-designer2" />
+      <file leaf-file-name="SettingsFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1186">
+              <caret line="72" column="87" selection-start-line="72" selection-start-column="87" selection-end-line="72" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1797#1798#0" expanded="true" />
+                <element signature="e#1878#1879#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="set_tags.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/set_tags.xml">
+      <file leaf-file-name="notification_history.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/notification_history.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+            <state relative-caret-position="95">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification_history_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/notification_history_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file leaf-file-name="ImageActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/ImageActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -62,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/notification_history.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
@@ -71,22 +162,25 @@
         <option value="$PROJECT_DIR$/res/layout/tab_settings.xml" />
         <option value="$PROJECT_DIR$/res/layout/tab_history.xml" />
         <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/SetTagsActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/arrays.xml" />
-        <option value="$PROJECT_DIR$/res/raw/androidpn.properties" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/org/androidpn/util/EditTextClearTools.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/register.xml" />
         <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/RegisterActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/image.xml" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/line_view.xml" />
         <option value="$PROJECT_DIR$/res/drawable/white_input_background.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/res/drawable/input_blue_background.xml" />
+        <option value="$PROJECT_DIR$/res/layout/image.xml" />
+        <option value="$PROJECT_DIR$/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/res/layout/set_tags.xml" />
+        <option value="$PROJECT_DIR$/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/res/layout/register.xml" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/notification_history_item.xml" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/demoapp/ImageActivity.java" />
+        <option value="$PROJECT_DIR$/res/raw/androidpn.properties" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java" />
       </list>
     </option>
   </component>
@@ -128,18 +222,6 @@
               <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="raw" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -158,6 +240,13 @@
               <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="androidpn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidpn-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidpn" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="androidpn-client" type="b2602c69:ProjectViewProjectNode" />
@@ -185,6 +274,7 @@
     <property name="android.profiler.active" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../IntelliJIDEA/AndroidSDK" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Android SQLite" />
     <property name="device.picker.selection" value="127.0.0.1:62001" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../git/Git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -303,7 +393,7 @@
       <workItem from="1524187470415" duration="3982000" />
       <workItem from="1524193149229" duration="6303000" />
       <workItem from="1524207842549" duration="6818000" />
-      <workItem from="1524279819275" duration="10356000" />
+      <workItem from="1524279819275" duration="22754000" />
     </task>
     <task id="LOCAL-00001" summary="添加自定义EditText&#10;完成标签设置功能">
       <created>1524290411403</created>
@@ -316,10 +406,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68690000" />
+    <option name="totallyTimeSpent" value="81088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="0" sideWeight="0.49932975" weight="0.3281471" />
@@ -327,22 +418,22 @@
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50268096" side_tool="true" weight="0.33097595" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="3" visible="true" weight="0.5572843" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="3" visible="true" weight="0.20933522" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.08914209" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.25737265" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49865952" weight="0.15983027" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49865952" weight="0.22065064" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Preview" order="3" weight="0.11997319" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="8" sideWeight="0.49798927" weight="0.6152758" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="8" sideWeight="0.49798927" weight="0.38330975" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49932975" weight="0.15275814" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49865952" weight="0.3281471" />
       <window_info id="Captures" order="2" />
@@ -379,52 +470,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/NotificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2109">
-          <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
-          <folding>
-            <element signature="e#4348#4349#0" expanded="true" />
-            <element signature="e#4395#4396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/model/NotificationHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/ParentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../IntelliJIDEA/AndroidSDK/sources/android-19/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/iq/SetTagsIQ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -432,45 +477,6 @@
           <folding>
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding>
-            <element signature="e#3270#3271#0" expanded="true" />
-            <element signature="e#3304#3305#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,13 +503,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/img_1.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/icon_del.gif">
       <provider selected="true" editor-type-id="images" />
@@ -561,21 +560,6 @@
     <entry file="file://$PROJECT_DIR$/res/drawable/title_bar.9.png">
       <provider editor-type-id="images" />
       <provider selected="true" editor-type-id="ninepatcheditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/image.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/ImageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/NotificationSettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -638,36 +622,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1775#1811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/tab_settings.xml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/input_blue_background.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -676,13 +633,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/set_tags.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+        <state relative-caret-position="238">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+          <folding>
+            <element signature="e#4065#4082#0" expanded="true" />
+            <element signature="e#5540#5570#0" expanded="true" />
+            <element signature="e#6453#6486#0" expanded="true" />
+            <element signature="e#7198#7228#0" expanded="true" />
+            <element signature="e#8111#8144#0" expanded="true" />
+            <element signature="e#8844#8863#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1130">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1028">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/image.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="51" column="64" lean-forward="true" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IntelliJIDEA/AndroidSDK/sources/android-19/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="678" column="19" lean-forward="true" selection-start-line="678" selection-start-column="19" selection-end-line="678" selection-end-column="19" />
+          <folding>
+            <element signature="e#36819#36820#0" expanded="true" />
+            <element signature="e#36849#36850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/DemoAppActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1186">
+          <caret line="72" column="87" selection-start-line="72" selection-start-column="87" selection-end-line="72" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/demoapp/ImageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notification_history.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IntelliJIDEA/AndroidSDK/sources/android-19/android/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="1239" column="16" selection-start-line="1239" selection-start-column="16" selection-end-line="1239" selection-end-column="16" />
+          <folding>
+            <element signature="e#48015#48016#0" expanded="true" />
+            <element signature="e#48043#48044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/client/XmppManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/raw/androidpn.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notification_history_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

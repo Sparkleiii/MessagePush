@@ -4,6 +4,7 @@
               android:layout_height="match_parent"
                 android:background="@drawable/background"
 >
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:orientation="vertical"
@@ -39,6 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:singleLine="true"
                     android:background="@drawable/white_input_background"
                      />
         </LinearLayout>
@@ -73,10 +75,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:singleLine="true"
                     android:background="@drawable/white_input_background"
             />
         </LinearLayout>
 
+        <!-- 考试科目 英语-->
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,10 +90,46 @@
                 android:background="@drawable/input_blue_background"
         >
             <TextView
-                    android:id="@+id/tv_resource"
+                    android:id="@+id/tv_english_type"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/student_resource"
+                    android:text="@string/english"
+                    android:textSize="20sp"
+            />
+            <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/gray"/>
+            <Spinner
+                    android:id="@+id/spinner_english_type"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/white_input_background"
+                    android:entries="@array/english_type"
+            >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- 专业课一 -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_blue_background"
+        >
+            <TextView
+                    android:id="@+id/tv_professional_course1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/professional_course1"
                     android:textSize="20sp"
             />
             <View
@@ -100,17 +140,91 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:background="@color/gray" />
+            <EditText
+                    android:id="@+id/professional_course1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:hint="@string/professional_course_tip"
+                    android:background="@drawable/white_input_background"
+            />
+        </LinearLayout>
+
+        <!-- 专业课二 -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_blue_background"
+        >
+            <TextView
+                    android:id="@+id/tv_professional_course2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/professional_course2"
+                    android:textSize="20sp"
+            />
+            <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/gray" />
+            <EditText
+                    android:id="@+id/professional_course2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:hint="@string/professional_course_tip"
+                    android:background="@drawable/white_input_background"
+            />
+        </LinearLayout>
+        <!-- 考试方式 -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_blue_background"
+        >
+            <TextView
+                    android:id="@+id/tv_exam_type"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exam_type"
+                    android:textSize="20sp"
+            />
+            <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/gray"/>
             <Spinner
-                    android:id="@+id/spinner_resource"
+                    android:id="@+id/spinner_exam_type"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/white_input_background"
-                    android:entries="@array/student_resource"
+                    android:entries="@array/exam_type"
             >
             </Spinner>
         </LinearLayout>
+
          <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -128,4 +242,5 @@
          </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

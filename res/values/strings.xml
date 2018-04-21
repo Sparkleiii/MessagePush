@@ -27,6 +27,14 @@
     <string name="notification_detail">消息详情</string>
     <string name="changeMenu">切换菜单</string>
     <string name="student_resource">考生来源</string>
+    <string name="exam_type">考试方式</string>
+    <string name="exam_default_type">全国统考</string>
     <string name="default_resource">全日制应届本科毕业生</string>
     <string name="submit">提交修改</string>
+    <string name="english">英语</string>
+    <string name="english_default">英语一</string>
+    <string name="professional_course1">专业课一</string>
+    <string name="professional_course2">专业课二</string>
+    <string name="professional_course_tip">请输入考研科目编号</string>
+    <string name="modify_success">修改成功</string>
 </resources>
