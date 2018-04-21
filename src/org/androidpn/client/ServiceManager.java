@@ -74,7 +74,8 @@ public final class ServiceManager {
     }
 
     public void postInfo(){
-        xmppHost = "http://192.168.1.102:8080";
+//        xmppHost = "http://192.168.1.103:8080";
+        xmppHost = "http://172.25.69.146:8080";
         HttpPost httpRequest = new HttpPost(xmppHost+getUrl());
         try {
             //设置请求参数项
@@ -274,14 +275,11 @@ public final class ServiceManager {
                     iq.setAlias(alias);
                     xmppManager.getConnection().sendPacket(iq);
                 }
-
-
             }
         }).start();
     }
 
-    public void setTags(List<String> tagList){
-        final String username = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
+    public void setTags(List<String> tagList,String username){
         if (TextUtils.isEmpty(username) || tagList.isEmpty()|| tagList==null) {
             return;
         }

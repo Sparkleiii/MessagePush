@@ -2,16 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+                android:background="@drawable/background"
 >
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:orientation="vertical"
     >
 
+        <!-- 目标院校 -->
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_blue_background"
                 >
             <TextView
                     android:id="@+id/tv_school"
@@ -20,36 +25,107 @@
                     android:text="@string/targetSchool"
                     android:textSize="20sp"
             />
+            <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/gray" />
             <EditText
                     android:id="@+id/et_school"
-                    android:layout_width="270dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/white_input_background"
                      />
+        </LinearLayout>
+
+        <!-- 专业 -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_blue_background"
+        >
+            <TextView
+                    android:id="@+id/tv_major"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/major"
+                    android:textSize="20sp"
+            />
+            <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/gray" />
+            <EditText
+                    android:id="@+id/et_major"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/white_input_background"
+            />
         </LinearLayout>
 
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_blue_background"
         >
             <TextView
-                    android:id="@+id/tv_major"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_resource"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/major"
+                    android:text="@string/student_resource"
                     android:textSize="20sp"
             />
-            <EditText
-                    android:id="@+id/et_major"
-                    android:layout_width="270dp"
+            <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/gray" />
+            <Spinner
+                    android:id="@+id/spinner_resource"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-            />
-
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/white_input_background"
+                    android:entries="@array/student_resource"
+            >
+            </Spinner>
         </LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+         >
+             <Button
+                     android:id="@+id/btn_submit"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/btn_round"
+                     android:textSize="20dp"
+                     android:text="@string/submit"
+             />
+         </LinearLayout>
 
     </LinearLayout>
-
-
 </RelativeLayout>

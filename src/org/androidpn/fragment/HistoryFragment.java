@@ -31,7 +31,6 @@ public class HistoryFragment extends Fragment{
         View view = inflater.inflate(R.layout.notification_history,container,false);
         mlist = DataSupport.findAll(NotificationHistory.class);
         mlistView = (ListView)view.findViewById(R.id.list_view_history);
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         /**
          * item点击事件
          * **/
@@ -56,12 +55,6 @@ public class HistoryFragment extends Fragment{
         mlistView.setAdapter(mAdapter);
         registerForContextMenu(mlistView);
         return view;
-
-
-
-
-
-
     }
 
     //创建上下文菜单

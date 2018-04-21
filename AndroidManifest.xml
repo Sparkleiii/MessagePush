@@ -23,10 +23,10 @@
 		</activity>
         <activity android:name=".SetTagsActivity"
                   android:label="@string/setTags"
-		>
-
-		</activity>
-
+		></activity>
+		<activity android:name=".RegisterActivity"
+				  android:label="@string/register"
+		></activity>
 		<activity android:name=".NotificationSettingsActivity"
 				  android:label="Notification Settings">
 		</activity>
