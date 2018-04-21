@@ -11,89 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca088191-f9fd-44a4-b45c-e074e89b440d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/res/drawable/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/drawable/icon_del.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/drawable/input_blue_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/drawable/white_input_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/layout/register.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/values/arrays.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/demoapp/RegisterActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/util/EditTextClearTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/androidpn-client.apk" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/androidpn-client.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/androidpn-client.unaligned.apk" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/androidpn-client.unaligned.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/img_frame_background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/qq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/tab_bg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/tab_history.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/drawable/tab_history.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/tab_history_pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/drawable/tab_history_pressed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/tab_setting.gif" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/drawable/tab_setting.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/drawable/tab_setting_pressed.gif" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/drawable/tab_setting_pressed.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/left_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/left_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/notification_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/notification_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/set_tags.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/set_tags.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/tab_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/tab_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/tab_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/tab_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/layout/tab_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/layout/tab_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/client/ServiceManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/DemoAppActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/DemoAppActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/ImageActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/LoginActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/LoginActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/LoginActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/LoginActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/LoginActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/LoginActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$raw.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$raw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/SetTagsActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/demoapp/SetTagsActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$NotificationHistoryAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment$NotificationHistoryAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HistoryFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HomeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/HomeFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/org/androidpn/fragment/SettingsFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/raw/androidpn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/raw/androidpn.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/classes/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/classes/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/img_frame_background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/qq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/tab_bg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/tab_history.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/drawable/tab_history.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/tab_history_pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/drawable/tab_history_pressed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/tab_setting.gif" beforeDir="false" afterPath="$PROJECT_DIR$/res/drawable/tab_setting.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/drawable/tab_setting_pressed.gif" beforeDir="false" afterPath="$PROJECT_DIR$/res/drawable/tab_setting_pressed.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/left_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/left_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/notification_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/notification_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/set_tags.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/set_tags.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/tab_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/tab_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/tab_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/tab_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/tab_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/tab_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/raw/androidpn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/raw/androidpn.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/client/ServiceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/demoapp/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/demoapp/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/demoapp/SetTagsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/demoapp/SetTagsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/fragment/HistoryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/fragment/SettingsFragment.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,8 +38,8 @@
       <file leaf-file-name="set_tags.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/set_tags.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="1005">
+              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -385,16 +303,23 @@
       <workItem from="1524187470415" duration="3982000" />
       <workItem from="1524193149229" duration="6303000" />
       <workItem from="1524207842549" duration="6818000" />
-      <workItem from="1524279819275" duration="9859000" />
+      <workItem from="1524279819275" duration="10356000" />
     </task>
+    <task id="LOCAL-00001" summary="添加自定义EditText&#10;完成标签设置功能">
+      <created>1524290411403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524290411403</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68193000" />
+    <option name="totallyTimeSpent" value="68690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="0" sideWeight="0.49932975" weight="0.3281471" />
@@ -402,7 +327,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50268096" side_tool="true" weight="0.33097595" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="3" weight="0.1980198" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="3" visible="true" weight="0.5572843" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
@@ -412,13 +337,13 @@
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" sideWeight="0.49865952" visible="true" weight="0.15983027" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49865952" weight="0.15983027" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Preview" order="3" weight="0.11997319" />
       <window_info anchor="bottom" auto_hide="true" id="Run" order="8" sideWeight="0.49798927" weight="0.6152758" />
-      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49932975" weight="0.15417255" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49932975" weight="0.15275814" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49865952" weight="0.3281471" />
       <window_info id="Captures" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.25737265" />
@@ -439,6 +364,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加自定义EditText&#10;完成标签设置功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加自定义EditText&#10;完成标签设置功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -749,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/set_tags.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="1005">
+          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />

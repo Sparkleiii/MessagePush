@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="student_resource">
+        <item >@string/default_resource</item>
+        <item >科学研究人员</item>
+        <item >高等教育教师</item>
+        <item >其他在职人员</item>
+        <item >成人应届本科毕业生</item>
+        <item >其他人员</item>
+    </string-array>
+</resources>
