@@ -1,19 +1,19 @@
 
 package org.androidpn.demoapp;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import org.androidpn.client.ServiceManager;
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import org.androidpn.fragment.HistoryFragment;
 import org.androidpn.fragment.HomeFragment;
 import org.androidpn.fragment.SettingsFragment;
@@ -34,10 +34,13 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
     private ImageButton ibtn_home;
     private ImageButton ibtn_history;
     private ImageButton ibtn_settings;
+
     //fragment
     private Fragment home;
     private Fragment history;
     private Fragment settings;
+    //left_menu
+//    private
 
 
 

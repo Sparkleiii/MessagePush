@@ -2,10 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="45dp"
-              android:orientation="vertical"
+              android:orientation="horizontal"
               android:background="@drawable/title_bar"
-              android:gravity="center"
 >
+
+    <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_user2"
+            android:layout_gravity="left"
+            android:onClick="toggleMenu"
+    />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+    >
 
     <TextView
             android:layout_width="wrap_content"
@@ -16,5 +28,5 @@
             android:textSize="20sp"
             android:textStyle="bold"
     />
-
+    </LinearLayout>
 </LinearLayout>

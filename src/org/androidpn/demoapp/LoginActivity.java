@@ -6,10 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.*;
 import org.androidpn.client.NotificationService;
 import org.androidpn.client.ServiceManager;
 import org.androidpn.util.EditTextClearTools;
@@ -67,6 +64,7 @@ public class LoginActivity extends Activity {
                         serviceManager.setSign(false);
                         intent = new Intent(LoginActivity.this, DemoAppActivity.class);
                         intent.putExtra("username",account);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }else{
                         Toast.makeText(context, context.getString(R.string.user_valid_failed), Toast.LENGTH_LONG).show();

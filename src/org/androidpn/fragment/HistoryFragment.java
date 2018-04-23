@@ -5,11 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.*;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.*;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
@@ -19,6 +18,7 @@ import org.androidpn.client.LogUtil;
 import org.androidpn.demoapp.ImageActivity;
 import org.androidpn.demoapp.R;
 import org.androidpn.model.NotificationHistory;
+import org.androidpn.view.RefreshableView;
 import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
@@ -33,12 +33,36 @@ public class HistoryFragment extends Fragment{
     private List<NotificationHistory> mlist = new ArrayList<>();
     private RequestQueue mQueue;
     private String url;
+    private Handler handler;
+    private RefreshableView refreshableView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.notification_history,container,false);
         initView(view);
+        handler = new Handler();
+        Runnable refreshUI = new Runnable(){
+            @Override
+            public void run() {
+                mlist.clear();
+                mlist.addAll(DataSupport.findAll(NotificationHistory.class));
+                mAdapter.notifyDataSetChanged();
+            }
+        };
+
+        refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
+            @Override
+            public void onRefresh() {
+                try {
+                    handler.post(refreshUI);
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                refreshableView.finishRefreshing();
+            }
+        }, 1);
 
         /**
          * item点击事件
@@ -61,6 +85,14 @@ public class HistoryFragment extends Fragment{
         mlistView.setAdapter(mAdapter);
         registerForContextMenu(mlistView);
         return view;
+    }
+    //初始化控件
+    private void initView(View view) {
+        mlist = DataSupport.findAll(NotificationHistory.class);
+        mlistView = (ListView)view.findViewById(R.id.list_view_history);
+        Log.d("mlistview", String.valueOf(mlistView));
+        mQueue = Volley.newRequestQueue(view.getContext());
+        refreshableView = (RefreshableView) view.findViewById(R.id.refreshable_view);
     }
 
     //创建上下文菜单
@@ -85,12 +117,6 @@ public class HistoryFragment extends Fragment{
         return super.onContextItemSelected(item);
     }
 
-    //初始化控件
-    private void initView(View view) {
-        mlist = DataSupport.findAll(NotificationHistory.class);
-        mlistView = (ListView)view.findViewById(R.id.list_view_history);
-        mQueue = Volley.newRequestQueue(view.getContext());
-    }
     /**
      * NotificationHistoryAdapter--->NotificationHistory
      * */
@@ -100,6 +126,12 @@ public class HistoryFragment extends Fragment{
                                           List<NotificationHistory> objects) {
             super(context, resource, objects);
         }
+        public void RefreshList(List<NotificationHistory> arrayList){
+            arrayList.clear();
+            arrayList.addAll(DataSupport.findAll(NotificationHistory.class));
+            mAdapter.notifyDataSetChanged();
+        }
+
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             NotificationHistory history = getItem(position);

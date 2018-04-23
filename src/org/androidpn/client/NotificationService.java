@@ -1,17 +1,8 @@
 
 package org.androidpn.client;
 
-import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-
 import android.app.Service;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
+import android.content.*;
 import android.content.SharedPreferences.Editor;
 import android.os.IBinder;
 import android.telephony.PhoneStateListener;
@@ -19,6 +10,11 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 import org.androidpn.receiver.ConnectivityReceiver;
 import org.androidpn.receiver.NotificationReceiver;
+
+import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 
 public class NotificationService extends Service {

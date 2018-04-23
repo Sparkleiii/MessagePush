@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
               android:layout_height="match_parent"
                 android:background="@drawable/background"
 >
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="40dp"
+                  android:layout_marginLeft="20dp"
+    >
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icon_portrait"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="^Sparkle"
+                android:textSize="32sp"
+        />
+
+    </LinearLayout>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -11,16 +31,16 @@
             android:orientation="vertical"
     >
         <RelativeLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
         >
             <ImageView
-                    android:id="@+id/iv_img1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/iv_personset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/img_1"
+                    android:src="@drawable/icon_user"
                     android:layout_centerVertical="true"
             />
             <TextView
@@ -28,9 +48,9 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:text="Item0"
+                    android:text="@string/personset"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/iv_img1"
+                    android:layout_toRightOf="@id/iv_personset"
                     android:layout_marginLeft="20dp"
             />
         </RelativeLayout>
@@ -39,12 +59,12 @@
                 android:layout_height="wrap_content"
         >
             <ImageView
-                    android:id="@+id/iv_img2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/iv_inforset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/img_2"
+                    android:src="@drawable/icon_infroset"
                     android:layout_centerVertical="true"
             />
             <TextView
@@ -52,9 +72,9 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:text="Item1"
+                    android:text="@string/pushset"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/iv_img2"
+                    android:layout_toRightOf="@id/iv_inforset"
                     android:layout_marginLeft="20dp"
             />
         </RelativeLayout>
@@ -63,12 +83,12 @@
                 android:layout_height="wrap_content"
         >
             <ImageView
-                    android:id="@+id/iv_img3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/iv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/img_3"
+                    android:src="@drawable/icon_about"
                     android:layout_centerVertical="true"
             />
             <TextView
@@ -76,9 +96,9 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:text="Item2"
+                    android:text="@string/about"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/iv_img3"
+                    android:layout_toRightOf="@id/iv_about"
                     android:layout_marginLeft="20dp"
             />
         </RelativeLayout>
@@ -87,12 +107,12 @@
                 android:layout_height="wrap_content"
         >
             <ImageView
-                    android:id="@+id/iv_img4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/iv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/img_4"
+                    android:src="@drawable/icon_logout"
                     android:layout_centerVertical="true"
             />
             <TextView
@@ -100,33 +120,9 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:text="Item3"
+                    android:text="@string/exit"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/iv_img4"
-                    android:layout_marginLeft="20dp"
-            />
-        </RelativeLayout>
-        <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-        >
-            <ImageView
-                    android:id="@+id/iv_img5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/img_5"
-                    android:layout_centerVertical="true"
-            />
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:text="Item4"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/iv_img5"
+                    android:layout_toRightOf="@id/iv_logout"
                     android:layout_marginLeft="20dp"
             />
         </RelativeLayout>
