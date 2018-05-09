@@ -6,4 +6,27 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="gray">#EEEFFF</color>
+    <color name="blue">#0000ff</color>
+
+    <color name="theme">#3691e2</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <!-- 描边颜色 -->
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+
+    <color name="background">#F0F3F6</color>
+    <color name="font_gray_b">#d4d4d3</color>
+
+    <color name="font_tab_1">#42369a</color>
+    <color name="font_tab_0">#b1b1b1</color>
+
+
+    <color name="font_common_1">#424242</color>
+    <color name="font_common_2">#a1a1a1</color>
+    <color name="font_blue">#42369a</color>
+
+    <color name="font_green">#00cccc</color>
+
+    <color name="commom_background">#f3f3f3</color>
 </resources>

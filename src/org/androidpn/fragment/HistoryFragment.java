@@ -73,6 +73,8 @@ public class HistoryFragment extends Fragment{
                 NotificationHistory history = mlist.get(position);
                 Intent intent = new Intent(view.getContext(),
                         ImageActivity.class);
+                intent.putExtra(Constants.NOTIFICATION_ID,history.getNotId());
+                Log.d("notId", String.valueOf(history.getNotId()));
                 intent.putExtra(Constants.NOTIFICATION_API_KEY, history.getApiKey());
                 intent.putExtra(Constants.NOTIFICATION_TITLE, history.getTitle());
                 intent.putExtra(Constants.NOTIFICATION_MESSAGE, history.getMessage());
@@ -100,7 +102,7 @@ public class HistoryFragment extends Fragment{
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        menu.add(0,0,0,"Remove");
+        menu.add(0,0,0,R.string.delete);
     }
 
     //上下文菜单点击事件

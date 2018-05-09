@@ -3,6 +3,8 @@ package org.androidpn.model;
 import org.litepal.crud.DataSupport;
 
 public class NotificationHistory extends DataSupport{
+    private String notId;
+
     private String apiKey;
 
     private String title;
@@ -14,6 +16,14 @@ public class NotificationHistory extends DataSupport{
     private String imageUrl;
 
     private String time;
+
+    public String getNotId() {
+        return notId;
+    }
+
+    public void setNotId(String notId) {
+        this.notId = notId;
+    }
 
     public String getTime() {
         return time;

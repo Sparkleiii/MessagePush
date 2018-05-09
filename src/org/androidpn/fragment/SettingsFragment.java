@@ -2,97 +2,107 @@ package org.androidpn.fragment;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
+import android.widget.TextView;
+import android.widget.Toast;
 import org.androidpn.client.LogUtil;
 import org.androidpn.client.ServiceManager;
+import org.androidpn.demoapp.InformationSettingsActivity;
+import org.androidpn.demoapp.LoginActivity;
+import org.androidpn.demoapp.NotificationSettingsActivity;
 import org.androidpn.demoapp.R;
-import java.util.ArrayList;
-import java.util.List;
 
-public class SettingsFragment extends Fragment{
+public class SettingsFragment extends Fragment implements View.OnClickListener{
     private static final String LOGTAG = LogUtil
             .makeLogTag(SettingsFragment.class);
-    private Spinner spinner_exam_type;
-    private Spinner spinner_english_type;
-    private EditText et_school;
-    private EditText et_major;
-    private EditText et_pro_course1;
-    private EditText et_pro_course2;
-    private Button btn_submit;
-    private String school;
-    private String major;
-    private String exam_type;
-    private String pro_course1;
-    private String pro_course2;
-    private String english_type;
     private Context context;
+    private TextView tv_personset;
+    private TextView tv_inforset;
+    private TextView tv_switch;
+    private TextView tv_about;
+    private TextView tv_logout;
     private ServiceManager serviceManager;
+    private String username;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view =inflater.inflate(R.layout.set_tags,container,false);
+        View view =inflater.inflate(R.layout.tab_settings,container,false);
         context = getActivity().getApplicationContext();
         serviceManager = new ServiceManager(getActivity());
         initView(view);
-        spinner_exam_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                exam_type = (String) spinner_exam_type.getSelectedItem();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                exam_type = getString(R.string.exam_default_type);
-            }
-        });
-        spinner_english_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                english_type = (String) spinner_english_type.getSelectedItem();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                english_type = getString(R.string.english_default);
-            }
-        });
         return view;
     }
+
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         Log.d("onActivityCreated","onActivityCreated");
-        btn_submit = (Button) getActivity().findViewById(R.id.btn_submit);
-        btn_submit.setOnClickListener(new View.OnClickListener() {
+        tv_personset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = getActivity().getIntent().getStringExtra("username");
-                List<String> tlist = new ArrayList<String>();
-                school = et_school.getText().toString();
-                major = et_major.getText().toString();
-                pro_course1 = et_pro_course1.getText().toString();
-                pro_course2 = et_pro_course2.getText().toString();
-                tlist.add(school);
-                tlist.add(major);
-                tlist.add(exam_type);
-                tlist.add(pro_course1);
-                tlist.add(pro_course2);
-                serviceManager.setTags(tlist,username);
-                Toast.makeText(getActivity(),getString(R.string.modify_success),Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getActivity(),InformationSettingsActivity.class);
+                username = getActivity().getIntent().getStringExtra("username");
+                Log.d(LOGTAG,"usernameSettingFragment"+username);
+                intent.putExtra("username",username);
+                startActivity(intent);
+            }
+        });
+        tv_about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("tv_about","tv_about Clicked");
+                Toast.makeText(getActivity(),"tv_about",Toast.LENGTH_LONG).show();
+            }
+        });
+        tv_inforset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),NotificationSettingsActivity.class);
+
+                startActivity(intent);
+            }
+        });
+        tv_switch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        tv_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("tv_logout","tv_logout Clicked");
+                getActivity().finish();
             }
         });
     }
 
     public void initView(View view){
-        et_school = (EditText) view.findViewById(R.id.et_school);
-        et_major = (EditText) view.findViewById(R.id.et_major);
-        et_pro_course1 = (EditText) view.findViewById(R.id.professional_course1);
-        et_pro_course2 = (EditText) view.findViewById(R.id.professional_course2);
-        spinner_exam_type = (Spinner) view.findViewById(R.id.spinner_exam_type);
-        spinner_english_type = (Spinner) view.findViewById(R.id.spinner_english_type);
+        tv_personset = (TextView)view.findViewById(R.id.tv_set_personset);
+        tv_about = (TextView) view.findViewById(R.id.tv_set_about);
+        tv_inforset = (TextView) view.findViewById(R.id.tv_set_inforset);
+        tv_logout = (TextView) view.findViewById(R.id.tv_set_logout);
+        tv_switch = (TextView) view.findViewById(R.id.tv_set_switch);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tv_about:
+                Log.d("tv_about","tv_about Clicked");
+                break;
+            case R.id.tv_logout:
+                Log.d("tv_logout","tv_logout Clicked");
+                getActivity().finish();
+                break;
+            default:break;
+        }
     }
 }

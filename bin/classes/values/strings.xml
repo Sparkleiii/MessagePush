@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="enter_index">开始体验</string>
     <string name="app_name">研讯</string>
     <string name="login_page">登录</string>
     <string name="history">历史消息</string>
@@ -16,6 +17,9 @@
     <string name="password">请输入密码</string>
     <string name="login">登录</string>
     <string name="register">注册</string>
+    <string name="uploadportrait">上传头像</string>
+    <string name="delete">删除消息</string>
+
     <string name="cancel">取消</string>
     <string name="histories">历史消息</string>
     <string name="targetSchool">目标院校</string>
@@ -49,11 +53,15 @@
     <string name="filter">筛选</string>
     <string name="tag">关键词</string>
 
+
     <string name="personset">个人设置</string>
     <string name="about">关于</string>
     <string name="pushset">消息设置</string>
     <string name="switchuser">切换用户</string>
     <string name="exit">退出</string>
+    <string name="support">点赞</string>
+    <string name="comment">评论</string>
+    <string name="no_comment">暂无评论，来抢沙发</string>
 
 
 </resources>

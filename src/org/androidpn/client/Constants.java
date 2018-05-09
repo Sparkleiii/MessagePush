@@ -83,4 +83,8 @@ public class Constants {
     public static String getActionReply(String action){
         return action+"_REPLY";
     }
+    //引导页首次显示参数
+    public static String IS_FIRST = "isfirst" ;
+    public static boolean FIRST_STATUS = true ;
+
 }

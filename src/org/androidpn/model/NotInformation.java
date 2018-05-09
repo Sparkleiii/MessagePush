@@ -1,7 +1,7 @@
 package org.androidpn.model;
 
 public class NotInformation {
-	private long id;
+	private long notId;
 	
 	private String title;
 	
@@ -19,12 +19,45 @@ public class NotInformation {
 
 	private String time;
 
-	public String getTime() {
-		return time;
+
+	public long getNotId() {
+		return notId;
 	}
 
-	public void setTime(String time) {
-		this.time = time;
+	public void setNotId(long notId) {
+		this.notId = notId;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public String getUri() {
+		return uri;
+	}
+
+	public void setUri(String uri) {
+		this.uri = uri;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 
 	public String getTag1() {
@@ -51,34 +84,12 @@ public class NotInformation {
 		this.tag3 = tag3;
 	}
 
-	public String getImageUrl() {
-		return imageUrl;
+	public String getTime() {
+		return time;
 	}
-	public void setImageUrl(String imageUrl) {
-		this.imageUrl = imageUrl;
+
+	public void setTime(String time) {
+		this.time = time;
 	}
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	public String getUri() {
-		return uri;
-	}
-	public void setUri(String uri) {
-		this.uri = uri;
-	}
+
 }

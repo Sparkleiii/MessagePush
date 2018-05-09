@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="45dp"
-              android:orientation="horizontal"
-              android:background="@drawable/title_bar"
->
 
-    <ImageButton
-            android:id="@+id/ibtn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/icon_user2"
-            android:layout_gravity="left"
-            android:onClick="toggleMenu"
-    />
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:gravity="center"
-    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/layout_titlebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@color/theme">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-    />
-    </LinearLayout>
-</LinearLayout>
+        <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+        <Button
+                android:id="@+id/ibtn_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:onClick="toggleMenu"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:background="@color/transparent"
+        />
+
+    </RelativeLayout>

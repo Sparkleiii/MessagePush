@@ -1,16 +1,15 @@
 
 package org.androidpn.client;
 
-import org.androidpn.demoapp.DemoAppActivity;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import org.androidpn.iq.DeliverConfirmIQ;
 import org.androidpn.iq.NotificationIQ;
 import org.androidpn.model.NotificationHistory;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.packet.Packet;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -66,6 +65,7 @@ public class NotificationPacketListener implements PacketListener {
 
                 //保存消息至历史消息
                 NotificationHistory history = new NotificationHistory();
+                history.setNotId(notification.getId());
                 history.setApiKey(notificationApiKey);
                 history.setImageUrl(notificationImageUrl);
                 history.setMessage(notificationMessage);

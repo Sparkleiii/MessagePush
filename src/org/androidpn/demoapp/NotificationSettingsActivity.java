@@ -42,7 +42,6 @@ public class NotificationSettingsActivity extends PreferenceActivity {
         preferenceManager
                 .setSharedPreferencesName(Constants.SHARED_PREFERENCE_NAME);
         preferenceManager.setSharedPreferencesMode(Context.MODE_PRIVATE);
-
         PreferenceScreen root = preferenceManager.createPreferenceScreen(this);
 
         //        PreferenceCategory prefCat = new PreferenceCategory(this);

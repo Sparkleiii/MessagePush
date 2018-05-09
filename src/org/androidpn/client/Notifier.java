@@ -1,8 +1,6 @@
 
 package org.androidpn.client;
 
-import java.util.Random;
-
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -12,6 +10,8 @@ import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.Toast;
 import org.androidpn.demoapp.ImageActivity;
+
+import java.util.Random;
 
 
 public class Notifier {
@@ -82,7 +82,6 @@ public class Notifier {
 
             PendingIntent contentIntent = PendingIntent.getActivity(context, random.nextInt(),
                     intent, PendingIntent.FLAG_UPDATE_CURRENT);
-
             notification.setLatestEventInfo(context, title, message,
                     contentIntent);
             notificationManager.notify(random.nextInt(), notification);

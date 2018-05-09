@@ -3,21 +3,85 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:background="@drawable/background"
+              android:background="@color/background"
 >
-    <!--<CheckBox
-            android:id="@+id/cb_enable_push"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/enable_push"
-            android:drawableRight=""
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:checked="true"
-    />-->
 
 
+    <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout">
+            <TextView
+                    android:id="@+id/tv_set_personset"
+                    style="@style/usertext"
+                      android:text="@string/personset"
+                      android:drawableLeft="@drawable/icon_user"
+                      android:drawablePadding="5dp"
+            />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
 
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 无圆角-->
+        <LinearLayout
+                style="@style/mid_layout">
+
+            <TextView
+                    android:id="@+id/tv_set_inforset"
+                    style="@style/usertext"
+                      android:text="@string/pushset"
+                      android:drawableLeft="@drawable/icon_infroset"
+                      android:drawablePadding="5dp"
+            />
+            <ImageView style="@style/img_arrow"/>
+
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+                style="@style/mid_layout">
+
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_set_switch"
+                      android:text="@string/switchuser"
+                      android:drawableLeft="@drawable/icon_switch"
+                      android:drawablePadding="5dp"
+            />
+            <ImageView style="@style/img_arrow"/>
+
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+
+            <TextView
+                    android:id="@+id/tv_set_about"
+                    style="@style/usertext"
+                      android:text="@string/about"
+                      android:drawableLeft="@drawable/icon_about"
+                      android:drawablePadding="5dp"
+            />
+            <ImageView style="@style/img_arrow"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout style="@style/single_layout">
+
+            <TextView
+                    android:id="@+id/tv_set_logout"
+                    style="@style/exittext"
+                    android:text="退出登陆"
+                    android:gravity="center"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

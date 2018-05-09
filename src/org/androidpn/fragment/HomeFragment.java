@@ -7,7 +7,9 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.*;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.*;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
@@ -97,6 +99,7 @@ public class HomeFragment extends Fragment{
                 NotInformation information = mlist.get(position);
                 Intent intent = new Intent(view.getContext(),
                         ImageActivity.class);
+                intent.putExtra(Constants.NOTIFICATION_ID,information.getNotId());
                 intent.putExtra(Constants.NOTIFICATION_API_KEY, "");
                 intent.putExtra(Constants.NOTIFICATION_TITLE, information.getTitle());
                 intent.putExtra(Constants.NOTIFICATION_MESSAGE, information.getMessage());
@@ -106,49 +109,18 @@ public class HomeFragment extends Fragment{
             }
         });
         mAdapter = new NotInformationAdapter(view.getContext(),0,mlist);
+        Log.d("mAdapter", String.valueOf(mAdapter));
         mlistView.setAdapter(mAdapter);
         registerForContextMenu(mlistView);
-
         return view;
     }
-
-    //创建上下文菜单
-    /*@Override
-    public void onCreateContextMenu(ContextMenu menu, View v,
-                                    ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        menu.add(0,0,0,"Remove");
-    }
-
-    //上下文菜单点击事件
-    @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        if(item.getItemId() == 0){
-            AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-            int index = menuInfo.position;
-            NotInformation notInformation = mlist.get(index);
-//            history.delete();
-            deleteNotInformation(notInformation);
-            mlist.remove(index);
-            mAdapter.notifyDataSetChanged();
-        }
-        return super.onContextItemSelected(item);
-    }
-
-    private void deleteNotInformation(NotInformation notInformation) {
-        serviceManager.setUrl("/user.do?action=delNotInformation");
-        params = new ArrayList<NameValuePair>();
-//        params.add(new BasicNameValuePair("id",Long.pasenotInformation.getId()));
-        serviceManager.setParams(params);
-        serviceManager = serviceManager.RequestToServer(serviceManager);
-    }*/
 
 
     public List<NotInformation> findAllNotInformation(){
         serviceManager.setUrl("/user.do?action=getNotInformation");
         serviceManager = serviceManager.RequestToServer(serviceManager);
         List<NotInformation> NIList = gson.fromJson(serviceManager.getJsonData(),new TypeToken<List<NotInformation>>(){}.getType());
-        Log.d("NotInformation", String.valueOf(NIList.get(0)));
+        Log.d("NIList", String.valueOf(NIList));
         return NIList;
     }
 
@@ -166,6 +138,7 @@ public class HomeFragment extends Fragment{
     private void initView(View view) {
         serviceManager = new ServiceManager(context);
         mlist = findAllNotInformation();
+        Log.d("mlist", String.valueOf(mlist));
         mlistView = (ListView) view.findViewById(R.id.list_view_information);
         mQueue = Volley.newRequestQueue(view.getContext());
         refreshableView = (RefreshableView) view.findViewById(R.id.refreshable_infor_view);
@@ -195,8 +168,10 @@ public class HomeFragment extends Fragment{
             TextView titleTextView = (TextView) view.findViewById(R.id.tv_infor_titles);
             TextView timeTextView = (TextView) view.findViewById(R.id.tv_infor_time);
             niv_imageView = (NetworkImageView) view.findViewById(R.id.niv_infor_image);
+            TextView contentTextView = (TextView) view.findViewById(R.id.tv_infor_content);
             titleTextView.setText(information.getTitle());
             timeTextView.setText(information.getTime());
+            contentTextView.setText(information.getMessage());
             /**
              * 加载网络图片
              */

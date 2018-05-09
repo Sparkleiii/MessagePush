@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.*;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 import org.androidpn.client.NotificationService;
 import org.androidpn.client.ServiceManager;
-import org.androidpn.util.EditTextClearTools;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -33,6 +36,7 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login);
         context = getApplicationContext();
         initView();
@@ -75,7 +79,7 @@ public class LoginActivity extends Activity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+//              Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);
             }
@@ -90,9 +94,5 @@ public class LoginActivity extends Activity {
         serviceManager.startService();
         et_username = (EditText) findViewById(R.id.edit_username);
         et_password = (EditText) findViewById(R.id.edit_password);
-        iv_username = (ImageView) findViewById(R.id.iv_login_username);
-        iv_password = (ImageView) findViewById(R.id.iv_login_pwd);
-        EditTextClearTools.addclerListener(et_username,iv_username);
-        EditTextClearTools.addclerListener(et_password,iv_password);
     }
 }

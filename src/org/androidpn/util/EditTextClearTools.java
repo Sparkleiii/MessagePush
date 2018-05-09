@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class EditTextClearTools {
-    public static void addclerListener(final EditText e1, final ImageView m1) {
+public class EditTextClearTools{
+    public static void addclearListener(final EditText e1, final ImageView m1) {
 
         e1.addTextChangedListener(new TextWatcher() {
 

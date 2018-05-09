@@ -3,7 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="70dp"
               android:orientation="horizontal"
-              android:background="@drawable/bottom_bar"
+              android:background="@color/white"
 >
 
     <!-- 主页-->

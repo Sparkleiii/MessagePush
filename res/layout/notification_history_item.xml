@@ -4,6 +4,7 @@
               android:layout_height="match_parent"
               android:layout_marginTop="5dp"
 >
+
     <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/niv_imageView"
             android:layout_width="100dp"
@@ -25,5 +26,6 @@
             android:gravity="center_horizontal"
             android:textColor="@color/black"
     />
+
 
 </LinearLayout>

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import org.androidpn.client.ServiceManager;
 import org.androidpn.fragment.HistoryFragment;
 import org.androidpn.fragment.HomeFragment;
@@ -40,9 +41,13 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
     private Fragment history;
     private Fragment settings;
     //left_menu
-//    private
-
-
+    private TextView tv_personset;
+    private TextView tv_inforset;
+    private TextView tv_about;
+    private TextView tv_logout;
+    private TextView tv_username;
+    private String username;
+    //private
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,8 +61,8 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
         serviceManager = new ServiceManager(this);
         context = getApplicationContext();
         mLeftMenu = (SlidingMenu) findViewById(R.id.sliding_menu);
-//        User user = (User) getIntent().getSerializableExtra("user");
-        String username = getIntent().getStringExtra("username");
+        username = getIntent().getStringExtra("username");
+        tv_username.setText(username);
         serviceManager.setAlias(username);
         // Settings
     }
@@ -74,6 +79,12 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
         ibtn_home = (ImageButton) findViewById(R.id.tab_home_img);
         ibtn_history = (ImageButton) findViewById(R.id.tab_history_img);
         ibtn_settings = (ImageButton) findViewById(R.id.tab_settings_img);
+        //
+        tv_personset = (TextView) findViewById(R.id.tv_personset);
+        tv_about = (TextView) findViewById(R.id.tv_about);
+        tv_inforset = (TextView) findViewById(R.id.tv_inforset);
+        tv_logout = (TextView) findViewById(R.id.tv_logout);
+        tv_username = (TextView) findViewById(R.id.tv_left_username);
     }
 
     /**
@@ -83,6 +94,11 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
         mTabHome.setOnClickListener(this);
         mTabHistory.setOnClickListener(this);
         mTabSetting.setOnClickListener(this);
+        tv_personset.setOnClickListener(this);
+        tv_about.setOnClickListener(this);
+        tv_inforset.setOnClickListener(this);
+        tv_logout.setOnClickListener(this);
+
     }
     public void toggleMenu(View view){
         mLeftMenu.toggle();
@@ -100,6 +116,22 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.tab_settings:
                 setSelect(2);
+                break;
+            case R.id.tv_personset:
+                //
+                intent = new Intent(DemoAppActivity.this,InformationSettingsActivity.class);
+                intent.putExtra("username",username);
+                startActivity(intent);
+                break;
+            case R.id.tv_inforset:
+                intent = new Intent(DemoAppActivity.this,NotificationSettingsActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_about:
+                //
+                break;
+            case R.id.tv_logout:
+                finish();
                 break;
             default:break;
         }

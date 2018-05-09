@@ -73,8 +73,8 @@ public final class ServiceManager {
     }
 
     public void postInfo(){
-        xmppHost = "http://192.168.1.106:8080";
-//        xmppHost = "http://172.25.69.146:8080";
+        xmppHost = "http://192.168.1.109:8080";
+//        xmppHost = "http://172.25.71.115:8080";
 //        xmppHost = "http://192.168.43.120:8080";
         HttpPost httpRequest = new HttpPost(xmppHost+getUrl());
         try {
