@@ -74,6 +74,7 @@ public class HistoryFragment extends Fragment{
                 Intent intent = new Intent(view.getContext(),
                         ImageActivity.class);
                 intent.putExtra(Constants.NOTIFICATION_ID,history.getNotId());
+                intent.putExtra("username",getActivity().getIntent().getStringExtra("username"));
                 Log.d("notId", String.valueOf(history.getNotId()));
                 intent.putExtra(Constants.NOTIFICATION_API_KEY, history.getApiKey());
                 intent.putExtra(Constants.NOTIFICATION_TITLE, history.getTitle());
@@ -128,12 +129,6 @@ public class HistoryFragment extends Fragment{
                                           List<NotificationHistory> objects) {
             super(context, resource, objects);
         }
-        public void RefreshList(List<NotificationHistory> arrayList){
-            arrayList.clear();
-            arrayList.addAll(DataSupport.findAll(NotificationHistory.class));
-            mAdapter.notifyDataSetChanged();
-        }
-
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             NotificationHistory history = getItem(position);

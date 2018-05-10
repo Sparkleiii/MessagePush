@@ -256,6 +256,7 @@ public final class ServiceManager {
                     e.printStackTrace();
                 }
                 NotificationService notificationService = NotificationService.getNotificationService();
+                Log.d("NotificationService", String.valueOf(notificationService));
                 XmppManager xmppManager = notificationService.getXmppManager();
                 if (xmppManager!=null){
                     if(!xmppManager.isAuthenticated()){

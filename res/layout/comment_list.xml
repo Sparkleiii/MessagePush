@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+        android:id="@+id/ll_comment_list"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ImageActivity"
+        android:orientation="vertical">
+        <org.androidpn.view.ListViewForScrollView android:id="@+id/list_view_comment"
               android:layout_width="match_parent"
-              android:layout_height="100dp"
-              tools:context=".ImageActivity"
-              android:orientation="vertical">
+              android:layout_height="match_parent">
+        </org.androidpn.view.ListViewForScrollView>
         <TextView
                 android:id="@+id/tv_no_comment"
                 android:layout_width="match_parent"
@@ -13,10 +19,6 @@
                 android:text="@string/no_comment"
                 android:textSize="18sp"
                 android:textColor="@color/font_gray_b"
-
+                android:visibility="gone"
         />
-        <ListView android:id="@+id/list_view_comment"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-        </ListView>
 </LinearLayout>

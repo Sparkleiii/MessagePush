@@ -99,6 +99,7 @@ public class HomeFragment extends Fragment{
                 NotInformation information = mlist.get(position);
                 Intent intent = new Intent(view.getContext(),
                         ImageActivity.class);
+                intent.putExtra("username",getActivity().getIntent().getStringExtra("username"));
                 intent.putExtra(Constants.NOTIFICATION_ID,information.getNotId());
                 intent.putExtra(Constants.NOTIFICATION_API_KEY, "");
                 intent.putExtra(Constants.NOTIFICATION_TITLE, information.getTitle());

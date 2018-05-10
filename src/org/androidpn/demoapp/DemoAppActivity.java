@@ -26,7 +26,6 @@ public class DemoAppActivity extends Activity implements View.OnClickListener{
     private ServiceManager serviceManager;
     private Context context;
     private Intent intent;
-
     //tab
     private LinearLayout mTabHome;
     private LinearLayout mTabHistory;

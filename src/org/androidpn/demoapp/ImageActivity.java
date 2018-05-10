@@ -6,8 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.*;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
@@ -18,66 +20,84 @@ import com.google.gson.reflect.TypeToken;
 import org.androidpn.client.Constants;
 import org.androidpn.client.ServiceManager;
 import org.androidpn.model.Comment;
+import org.androidpn.view.ListViewForScrollView;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-public class ImageActivity extends Activity {
+public class ImageActivity extends Activity implements View.OnClickListener {
+    //帖子属性
+    private String notificationTitle;
+    private String notificationMessage;
+    private String notificationUri;
+    private String url;
+    private Long notId;
+    private String account;
+    //
+    private View mView;
     private NetworkImageView networkImageView;
     private TextView title;
     private TextView content;
     private RequestQueue mQueue;
     private Button ibtn_back;
     private ServiceManager serviceManager;
-    private Long notId = null;
     //comment_item
-
     private TextView tv_username;
     private TextView tv_local;
     private TextView tv_comment_content;
     private TextView tv_comment_time;
     //评论listview
-    private ListView mlistView;
+    private ListViewForScrollView mlistView;
     private CommentAdapter mAdapter;
     private List<Comment> mlist = new ArrayList<>();
     private List<NameValuePair> params;
+    private List<NameValuePair> params2;
     private Gson gson = new Gson();
+    //TextView点击控件
+    private TextView tv_support;
+    private TextView tv_comment;
+    private LinearLayout ll_info;
+    private LinearLayout ll_comment;
+    private EditText et_comment;
+    private Button btn_comment_save;
+    private LinearLayout ll_comment_list;
+
+    private Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         Intent intent = getIntent();
-        notId =intent.getLongExtra(Constants.NOTIFICATION_ID,0);
-        String notificationTitle = intent
-                .getStringExtra(Constants.NOTIFICATION_TITLE);
-        String notificationMessage = intent
-                .getStringExtra(Constants.NOTIFICATION_MESSAGE);
-        String notificationUri = intent
-                .getStringExtra(Constants.NOTIFICATION_URI);
-        String url = intent
-                .getStringExtra(Constants.NOTIFICATION_IMAGE_URL);
+        initParams(intent);
         setContentView(R.layout.comment);
         initView();
-        if(mlist!=null){
-            mAdapter = new CommentAdapter(this,0,mlist);
-            mlistView.setAdapter(mAdapter);
-            registerForContextMenu(mlistView);
-            setListViewHight();
-        }else{
-            TextView tv_no_comment = (TextView) findViewById(R.id.tv_no_comment);
-            tv_no_comment.setVisibility(View.VISIBLE);
-            mlistView.setVisibility(View.GONE);
-        }
-        ibtn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        initAdapter();
+        initImage(notificationTitle,notificationMessage,url);
+    }
 
+    /**
+     * 初始化帖子参数
+     * @param intent
+     */
+    private void initParams(Intent intent) {
+        notId =intent.getLongExtra(Constants.NOTIFICATION_ID,0);
+        notificationTitle = intent
+                .getStringExtra(Constants.NOTIFICATION_TITLE);
+        notificationMessage = intent
+                .getStringExtra(Constants.NOTIFICATION_MESSAGE);
+        notificationUri = intent
+                .getStringExtra(Constants.NOTIFICATION_URI);
+        url = intent
+                .getStringExtra(Constants.NOTIFICATION_IMAGE_URL);
+        account = intent.getStringExtra("username");
+    }
+
+    private void initImage(String notificationTitle,String notificationMessage,String url) {
         mQueue = Volley.newRequestQueue(this);
         ImageLoader imageLoader = new ImageLoader(mQueue, new ImageLoader.ImageCache() {
             @Override
@@ -93,7 +113,32 @@ public class ImageActivity extends Activity {
         networkImageView.setImageUrl(url,imageLoader);
     }
 
+    /**
+     *  ListView
+     */
+    private void initAdapter() {
+        TextView tv_no_comment = (TextView) findViewById(R.id.tv_no_comment);
+        if(mlist!=null){
+            tv_no_comment.setVisibility(View.GONE);
+            mlistView.setVisibility(View.VISIBLE);
+            mAdapter = new CommentAdapter(this,0,mlist);
+            mlistView.setAdapter(mAdapter);
+            registerForContextMenu(mlistView);
+            setListViewHight();
+        }else{
+            //设置LL的高度
+            ViewGroup.LayoutParams params = ll_comment_list.getLayoutParams();
+            params.height = 200;
+            Log.d("height", String.valueOf(params.height));
+            ll_comment_list.setLayoutParams(params);
+            tv_no_comment.setVisibility(View.VISIBLE);
+            mlistView.setVisibility(View.GONE);
+        }
+    }
 
+    /**
+     * 初始化控件
+     */
     private void initView() {
         serviceManager = new ServiceManager(this);
         title = (TextView) findViewById(R.id.tv_title);
@@ -101,26 +146,30 @@ public class ImageActivity extends Activity {
         ibtn_back = (Button) findViewById(R.id.ibtn_back);
         networkImageView = (NetworkImageView) findViewById(R.id.imageView1);
         //评论listview
-        mlistView = (ListView) findViewById(R.id.list_view_comment);
+        mlistView = (ListViewForScrollView) findViewById(R.id.list_view_comment);
         mlist = findCommentByNotId(notId+"");
         Log.d("mlist", String.valueOf(mlist));
-
+        //
+        tv_support = (TextView) findViewById(R.id.tv_support);
+        tv_comment = (TextView) findViewById(R.id.tv_comment);
+        ll_info = (LinearLayout) findViewById(R.id.am_ll_info);
+        ll_comment = (LinearLayout) findViewById(R.id.ll_leave_message);
+        et_comment = (EditText) findViewById(R.id.am_et_msg);
+        btn_comment_save = (Button) findViewById(R.id.am_b_save);
+        ll_comment_list = (LinearLayout) findViewById(R.id.ll_comment_list);
+        ibtn_back.setOnClickListener(this);
+        btn_comment_save.setOnClickListener(this);
+        tv_support.setOnClickListener(this);
+        tv_comment.setOnClickListener(this);
     }
 
-    /**
-     * 通过消息编号获取该消息的评论列表
-     * @param notId
-     * @return
-     */
-    private List<Comment> findCommentByNotId(String notId) {
-        serviceManager.setUrl("/manager.do?action=getCommentByNotId");
-        params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("notId",notId));
-        serviceManager.setParams(params);
-        serviceManager = serviceManager.RequestToServer(serviceManager);
-        List<Comment> NIList = gson.fromJson(serviceManager.getJsonData(),new TypeToken<List<Comment>>(){}.getType());
-        Log.d("NIList", String.valueOf(NIList));
-        return NIList;
+    public void refresh() {
+        Log.d("mlist", String.valueOf(mlist));
+        if(mlist!=null){
+            mlist.clear();
+            mlist.addAll(findCommentByNotId(notId+""));
+            mAdapter.notifyDataSetChanged();
+        }
     }
 
     @Override
@@ -136,7 +185,115 @@ public class ImageActivity extends Activity {
     }
 
     /**
-     * NotificationHistoryAdapter--->NotificationHistory
+     * 显示或隐藏输入法
+     */
+    private void onFocusChange(boolean hasFocus) {
+        final boolean isFocus = hasFocus;
+        (new Handler()).postDelayed(new Runnable() {
+            public void run() {
+                InputMethodManager imm = (InputMethodManager)
+                        getApplicationContext().getSystemService(INPUT_METHOD_SERVICE);
+                if (isFocus) {
+                    // 弹出输入法
+                    imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
+                    et_comment.setFocusable(true);
+                    et_comment.requestFocus();
+                } else {
+                    //隐藏输入法
+                    imm.hideSoftInputFromWindow(et_comment.getWindowToken(), 0);
+                }
+            }
+        }, 100);
+    }
+
+    //评论弹出输入法
+    private void comment(boolean flag) {
+        if(flag){
+            ll_info.setVisibility(View.GONE);
+            ll_comment.setVisibility(View.VISIBLE);
+            onFocusChange(flag);
+        }else{
+            ll_info.setVisibility(View.VISIBLE);
+            ll_comment.setVisibility(View.GONE);
+            onFocusChange(flag);
+        }
+    }
+
+
+
+    /**
+     * 点击事件
+     * @param v
+     */
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            //点赞
+            case R.id.tv_support:
+                break;
+             //评论
+            case R.id.tv_comment:
+                comment(true);
+                break;
+             //发表评论
+            case R.id.am_b_save:
+                sendComment(et_comment.getText().toString());
+                refresh();
+                comment(false);
+                break;
+             //返回按钮
+            case R.id.ibtn_back:
+                finish();
+                break;
+            default:
+                break;
+        }
+    }
+
+
+    /**
+     * 通过消息编号获取该消息的评论列表
+     * @param notId
+     * @return List<Comment>
+     */
+    private List<Comment> findCommentByNotId(String notId) {
+        serviceManager.setUrl("/manager.do?action=getCommentByNotId");
+        params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("notId",notId));
+        serviceManager.setParams(params);
+        serviceManager = serviceManager.RequestToServer(serviceManager);
+        List<Comment> NIList = gson.fromJson(serviceManager.getJsonData(),new TypeToken<List<Comment>>(){}.getType());
+        Log.d("NIList", String.valueOf(NIList));
+        return NIList;
+    }
+
+    /**
+     * 发送评论消息至服务器端
+     * @param content 评论内容
+     */
+    private void sendComment(String content) {
+        serviceManager.setUrl("/manager.do?action=sendComment");
+        params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("notId",notId+""));
+        params.add(new BasicNameValuePair("account",account));
+        params.add(new BasicNameValuePair("content",content));
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String time = sdf.format(date);
+        Log.d("notId", String.valueOf(notId));
+        Log.d("account",account);
+        Log.d("content",content);
+        Log.d("time",time);
+        Comment comment = new Comment();
+        params.add(new BasicNameValuePair("time",time));
+        serviceManager.setParams(params);
+        serviceManager = serviceManager.RequestToServer(serviceManager);
+        String result = serviceManager.getJsonData();
+        Log.d("发表评论结果",result);
+    }
+
+    /**
+     * CommentAdapter--->Comment
      * */
     class CommentAdapter extends ArrayAdapter<Comment> {
 
@@ -144,12 +301,6 @@ public class ImageActivity extends Activity {
                                           List<Comment> objects) {
             super(context, resource, objects);
         }
-        public void RefreshList(List<Comment> arrayList){
-            arrayList.clear();
-            arrayList.addAll(findCommentByNotId(notId+""));
-            mAdapter.notifyDataSetChanged();
-        }
-
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             Comment comment = getItem(position);
@@ -164,7 +315,6 @@ public class ImageActivity extends Activity {
             tv_comment_content = (TextView) view.findViewById(R.id.tv_comment_content);
             tv_comment_time = (TextView) view.findViewById(R.id.tv_comment_time);
             tv_username.setText(comment.getAccount());
-//            tv_local.setText(comment.get);
             tv_comment_content.setText(comment.getContent());
             tv_comment_time.setText(comment.getTime());
             return view;
@@ -174,16 +324,23 @@ public class ImageActivity extends Activity {
      * 解决ScrollView中ListView仅显示一条
      */
     public void setListViewHight(){
-        int totalHeight = 0;                                    // 定义、初始化listview总高度值
+        int totalHeight = 0;
+        // 定义、初始化listview总高度值
         for (int i = 0; i < mAdapter.getCount(); i++) {
-            View listItem = mAdapter.getView(i, null, mlistView);          // 获取单个item
+            View listItem = mAdapter.getView(i, null, mlistView);
+            // 获取单个item
             listItem.setLayoutParams(new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));// 设置item高度为适应内容
+                    LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            // 设置item高度为适应内容
             listItem.measure(0, 0);                                        // 测量现在item的高度
-            totalHeight += listItem.getMeasuredHeight();                   // 总高度增加一个listitem的高度
+            totalHeight += listItem.getMeasuredHeight();
+            // 总高度增加一个listitem的高度
         }
         ViewGroup.LayoutParams params = mlistView.getLayoutParams();
-        params.height = totalHeight + (mlistView.getDividerHeight() * (mAdapter.getCount() - 1)); // 将分割线高度加上总高度作为最后listview的高度
+        params.height = totalHeight + (mlistView.getDividerHeight() * (mAdapter.getCount() - 1));
+        // 将分割线高度加上总高度作为最后listview的高度
+        Log.d("height", String.valueOf(params.height));
+        Log.d("height", String.valueOf(totalHeight));
         mlistView.setLayoutParams(params);
     }
 
