@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -66,8 +67,6 @@ public class ImageActivity extends Activity implements View.OnClickListener {
     private Button btn_comment_save;
     private LinearLayout ll_comment_list;
 
-    private Handler handler;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,6 +75,7 @@ public class ImageActivity extends Activity implements View.OnClickListener {
         initParams(intent);
         setContentView(R.layout.comment);
         initView();
+        initSupport();
         initAdapter();
         initImage(notificationTitle,notificationMessage,url);
     }
@@ -161,14 +161,19 @@ public class ImageActivity extends Activity implements View.OnClickListener {
         btn_comment_save.setOnClickListener(this);
         tv_support.setOnClickListener(this);
         tv_comment.setOnClickListener(this);
+
+
     }
 
     public void refresh() {
-        Log.d("mlist", String.valueOf(mlist));
-        if(mlist!=null){
+        if(mlist!=null&&!mlist.isEmpty()){
             mlist.clear();
             mlist.addAll(findCommentByNotId(notId+""));
             mAdapter.notifyDataSetChanged();
+        }else{
+            mlist = findCommentByNotId(notId+"");
+            Log.d("mlist find", String.valueOf(mlist));
+            initAdapter();
         }
     }
 
@@ -218,8 +223,23 @@ public class ImageActivity extends Activity implements View.OnClickListener {
             onFocusChange(flag);
         }
     }
-
-
+    //点赞
+    private void support() {
+        boolean flag = isSupport();
+        if(flag){
+            tv_support.setText(R.string.support);
+            Drawable drawable = getResources().getDrawable(R.drawable.icon_support);
+            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+            tv_support.setCompoundDrawables(drawable,null,null,null);
+            cancelSupport();
+        }else{
+            tv_support.setText(R.string.hasSupport);
+            Drawable drawable = getResources().getDrawable(R.drawable.icon_support_pressed);
+            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+            tv_support.setCompoundDrawables(drawable,null,null,null);
+            sendSupport();
+        }
+    }
 
     /**
      * 点击事件
@@ -230,16 +250,19 @@ public class ImageActivity extends Activity implements View.OnClickListener {
         switch (v.getId()){
             //点赞
             case R.id.tv_support:
+                support();
                 break;
              //评论
             case R.id.tv_comment:
                 comment(true);
+
                 break;
              //发表评论
             case R.id.am_b_save:
                 sendComment(et_comment.getText().toString());
                 refresh();
                 comment(false);
+                Toast.makeText(this,R.string.comment_success,Toast.LENGTH_SHORT).show();
                 break;
              //返回按钮
             case R.id.ibtn_back:
@@ -293,6 +316,87 @@ public class ImageActivity extends Activity implements View.OnClickListener {
     }
 
     /**
+     * 点赞
+     */
+    public void sendSupport(){
+        serviceManager.setUrl("/manager.do?action=support");
+        params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("notId",notId+""));
+        params.add(new BasicNameValuePair("account",account));
+        serviceManager.setParams(params);
+        serviceManager = serviceManager.RequestToServer(serviceManager);
+        String result = serviceManager.getJsonData();
+        Log.d("点赞结果",result);
+    }
+
+    //初始化点赞按钮
+    public void initSupport(){
+        boolean flag = isSupport();
+        if(flag){
+            tv_support.setText(R.string.hasSupport);
+            Drawable drawable = getResources().getDrawable(R.drawable.icon_support_pressed);
+            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+            tv_support.setCompoundDrawables(drawable,null,null,null);
+        }else{
+            tv_support.setText(R.string.support);
+            Drawable drawable = getResources().getDrawable(R.drawable.icon_support);
+            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+            tv_support.setCompoundDrawables(drawable,null,null,null);
+        }
+    }
+    /**
+     * 取消点赞
+     */
+    public void cancelSupport(){
+        serviceManager.setUrl("/manager.do?action=cancelSupport");
+        params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("notId",notId+""));
+        params.add(new BasicNameValuePair("account",account));
+        serviceManager.setParams(params);
+        serviceManager = serviceManager.RequestToServer(serviceManager);
+        String result = serviceManager.getJsonData();
+        Log.d("取消结果",result);
+    }
+
+    /**
+     * 是否已点赞
+     * @return
+     */
+    public boolean isSupport(){
+        boolean flag = true;
+        serviceManager.setUrl("/manager.do?action=isSupport");
+        params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("notId",notId+""));
+        params.add(new BasicNameValuePair("account",account));
+        Log.d("notId", String.valueOf(notId));
+        Log.d("account",account);
+        serviceManager.setParams(params);
+        serviceManager = serviceManager.RequestToServer(serviceManager);
+        String result = serviceManager.getJsonData();
+        Log.d("cancelResult",result);
+        if(result.equals("no")){
+                flag = false;
+        }
+        Log.d("flag", String.valueOf(flag));
+        return flag;
+    }
+
+    /**
+     * 获取点赞数
+     * @return
+     */
+    public int getSupportNum(){
+        serviceManager.setUrl("/manager.do?action=getSupportNum");
+        params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("notId",notId+""));
+        Log.d("notId", String.valueOf(notId));
+        serviceManager.setParams(params);
+        serviceManager = serviceManager.RequestToServer(serviceManager);
+        int num = gson.fromJson(serviceManager.getJsonData(),new TypeToken<Integer>(){}.getType());
+        return num;
+    }
+
+    /**
      * CommentAdapter--->Comment
      * */
     class CommentAdapter extends ArrayAdapter<Comment> {
@@ -332,15 +436,14 @@ public class ImageActivity extends Activity implements View.OnClickListener {
             listItem.setLayoutParams(new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
             // 设置item高度为适应内容
-            listItem.measure(0, 0);                                        // 测量现在item的高度
+            listItem.measure(0, 0);
+            // 测量现在item的高度
             totalHeight += listItem.getMeasuredHeight();
             // 总高度增加一个listitem的高度
         }
         ViewGroup.LayoutParams params = mlistView.getLayoutParams();
         params.height = totalHeight + (mlistView.getDividerHeight() * (mAdapter.getCount() - 1));
         // 将分割线高度加上总高度作为最后listview的高度
-        Log.d("height", String.valueOf(params.height));
-        Log.d("height", String.valueOf(totalHeight));
         mlistView.setLayoutParams(params);
     }
 

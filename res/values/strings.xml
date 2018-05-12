@@ -62,6 +62,8 @@
     <string name="support">点赞</string>
     <string name="comment">评论</string>
     <string name="no_comment">暂无评论，来抢沙发</string>
+    <string name="hasSupport">已点赞</string>
+    <string name="comment_success">评论成功</string>
 
 
 </resources>

@@ -45,9 +45,12 @@ public class LoginActivity extends Activity {
             public void onClick(View v) {
                 Intent intent;
                 notificationService = NotificationService.getNotificationService();
+                //获取客户端编号
                 String clientId = notificationService.getXmppManager().getUsername();
                 Log.d("clientId",clientId);
+                //登陆用户名
                 account = et_username.getText().toString();
+                //登陆密码
                 password = et_password.getText().toString();
                 if(account==null){
                     Toast.makeText(context,context.getString(R.string.no_account),Toast.LENGTH_SHORT).show();
@@ -55,6 +58,7 @@ public class LoginActivity extends Activity {
                 if(password==null&&account!=null){
                     Toast.makeText(context,context.getString(R.string.no_password),Toast.LENGTH_SHORT).show();
                 }
+                //用户名密码不为空
                 if(account!=null&&password!=null){
                     params = new ArrayList<NameValuePair>();
                     params.add(new BasicNameValuePair("clientId",clientId));
@@ -64,22 +68,21 @@ public class LoginActivity extends Activity {
                     serviceManager.setUrl("/user.do?action=login");
                     serviceManager = serviceManager.RequestToServer(serviceManager);
                     if(serviceManager.getJsonData().equals("success")){
-                        Toast.makeText(context, context.getString(R.string.user_valid_success), Toast.LENGTH_LONG).show();
-                        serviceManager.setSign(false);
-                        intent = new Intent(LoginActivity.this, DemoAppActivity.class);
-                        intent.putExtra("username",account);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
+                            Toast.makeText(context, context.getString(R.string.user_valid_success), Toast.LENGTH_LONG).show();
+                            serviceManager.setSign(false);
+                            intent = new Intent(LoginActivity.this, DemoAppActivity.class);
+                            intent.putExtra("username",account);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
                     }else{
-                        Toast.makeText(context, context.getString(R.string.user_valid_failed), Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, context.getString(R.string.user_valid_failed), Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
-            }
         });
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//              Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);
             }
